@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Rosa Thomas 的博客</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Rosa Thomas 的博客</description>
+    <image>
+      <title>Rosa Thomas 的博客</title>
+      <url>http://localhost:1313/cherry.png</url>
+      <link>http://localhost:1313/cherry.png</link>
+    </image>
+    <generator>Hugo -- 0.147.7</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 11 Aug 2025 22:47:48 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Mon, 11 Aug 2025 22:47:48 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;p&gt;This is an inline \(a^*=x-b^*\) equation.&lt;/p&gt;
+&lt;p&gt;These are block equations:&lt;/p&gt;
+\[a^*=x-b^*\]\[ a^*=x-b^* \]\[
+a^*=x-b^*
+\]&lt;p&gt;These are also block equations:&lt;/p&gt;
+$$a^*=x-b^*$$$$ a^*=x-b^* $$$$
+a^*=x-b^*
+$$</description>
+    </item>
+  </channel>
+</rss>
