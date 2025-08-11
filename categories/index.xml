@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Rosa Thomas 的博客</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://rosa-thomas-chen.github.io/categories/</link>
     <description>Recent content in Categories on Rosa Thomas 的博客</description>
     <image>
       <title>Rosa Thomas 的博客</title>
-      <url>http://localhost:1313/cherry.png</url>
-      <link>http://localhost:1313/cherry.png</link>
+      <url>https://rosa-thomas-chen.github.io/cherry.png</url>
+      <link>https://rosa-thomas-chen.github.io/cherry.png</link>
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>zh-CN</language>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rosa-thomas-chen.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
