@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Rosa Thomas 的博客</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Rosa Thomas 的博客</description>
+    <title>伍鸿熙 on Rosa Thomas 的博客</title>
+    <link>http://localhost:1313/tags/%E4%BC%8D%E9%B8%BF%E7%86%99/</link>
+    <description>Recent content in 伍鸿熙 on Rosa Thomas 的博客</description>
     <image>
       <title>Rosa Thomas 的博客</title>
       <url>http://localhost:1313/cherry.png</url>
@@ -11,20 +11,8 @@
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 03 Apr 2025 02:50:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>我心目中理想的围棋规则</title>
-      <link>http://localhost:1313/posts/2025/04/my-go-rules/</link>
-      <pubDate>Thu, 03 Apr 2025 02:50:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/2025/04/my-go-rules/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;笔者以新西兰规则、智运会规则为灵感来源，编辑了一份心目中理想的围棋规则，供您参考。&lt;/p&gt;
-&lt;h2 id=&#34;规则正文&#34;&gt;规则正文&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;19 x 19 网格&lt;/strong&gt;是由 19 条水平线段和 19 条竖直线段组成的网格，包括 361 个交叉点。&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Mon, 20 Jan 2025 17:57:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%BC%8D%E9%B8%BF%E7%86%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>伍鸿熙《数学家讲解小学数学》读书笔记（1）——前言和致读者</title>
       <link>http://localhost:1313/posts/2025/01/hunghsi-wu-01-preface/</link>
