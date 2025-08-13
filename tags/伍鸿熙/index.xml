@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>伍鸿熙 on Rosa Thomas 的博客</title>
-    <link>https://rosa-thomas-chen.github.io/tags/%E4%BC%8D%E9%B8%BF%E7%86%99/</link>
-    <description>Recent content in 伍鸿熙 on Rosa Thomas 的博客</description>
+    <title>伍鸿熙 on Rosa Thomas Chen 的博客</title>
+    <link>http://localhost:1313/tags/%E4%BC%8D%E9%B8%BF%E7%86%99/</link>
+    <description>Recent content in 伍鸿熙 on Rosa Thomas Chen 的博客</description>
     <image>
-      <title>Rosa Thomas 的博客</title>
-      <url>https://rosa-thomas-chen.github.io/cherry.png</url>
-      <link>https://rosa-thomas-chen.github.io/cherry.png</link>
+      <title>Rosa Thomas Chen 的博客</title>
+      <url>http://localhost:1313/cherry.png</url>
+      <link>http://localhost:1313/cherry.png</link>
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 20 Jan 2025 17:57:00 +0800</lastBuildDate>
-    <atom:link href="https://rosa-thomas-chen.github.io/tags/%E4%BC%8D%E9%B8%BF%E7%86%99/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E4%BC%8D%E9%B8%BF%E7%86%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>伍鸿熙《数学家讲解小学数学》读书笔记（1）——前言和致读者</title>
-      <link>https://rosa-thomas-chen.github.io/posts/2025/01/hunghsi-wu-01-preface/</link>
+      <link>http://localhost:1313/posts/2025/01/hunghsi-wu-01-preface/</link>
       <pubDate>Mon, 20 Jan 2025 17:57:00 +0800</pubDate>
-      <guid>https://rosa-thomas-chen.github.io/posts/2025/01/hunghsi-wu-01-preface/</guid>
+      <guid>http://localhost:1313/posts/2025/01/hunghsi-wu-01-preface/</guid>
       <description>&lt;h2 id=&#34;1-前言&#34;&gt;1 前言&lt;/h2&gt;
 &lt;h3 id=&#34;11-主要内容&#34;&gt;1.1 主要内容&lt;/h3&gt;
 &lt;p&gt;本书的主要内容是：小学数学中的数和运算．&lt;/p&gt;
