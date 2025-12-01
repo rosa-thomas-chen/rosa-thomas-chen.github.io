@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Posts | Rosa Thomas&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - Rosa Thomas&#39;s blog">
+<meta name="author" content="me">
+<link rel="canonical" href="https://rosa-thomas.me/en/posts/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="apple-touch-icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="mask-icon" href="https://rosa-thomas.me/images/cherry.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://rosa-thomas.me/en/posts/index.xml" title="rss">
+<link rel="alternate" hreflang="zh-cn" href="https://rosa-thomas.me/zh-cn/posts/">
+<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta property="og:url" content="https://rosa-thomas.me/en/posts/">
+  <meta property="og:site_name" content="Rosa Thomas&#39;s blog">
+  <meta property="og:title" content="Posts">
+  <meta property="og:description" content="A personal blog about mathematics, free software, and Go">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="A personal blog about mathematics, free software, and Go">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://rosa-thomas.me/en/posts/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosa-thomas.me/en/" accesskey="h" title="Rosa Thomas&#39;s Blog (Alt + H)">
+                <img src="https://rosa-thomas.me/images/cherry.png" alt="" aria-label="logo"
+                    height="25">Rosa Thomas&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-cn/" title="简体中文"
+                                aria-label="简体中文">Zh-Cn</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosa-thomas.me/en/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://rosa-thomas.me/en/">Home</a></div>
+  <h1>
+    Posts
+    <a href="/en/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我对公共关系学的思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 资本和权力都认为，舆情和争议是不好的东西，需要被平息。在媒体的宣传之下，我们已经默认，舆情和争议都是贬义词了。
+可以认为舆情和争议会带来一定程度的冲突，影响社会稳定。然而当我们放下成见，回归词语的本意，就会产生不一样的思考。
+《现代汉语词典》对舆情给出的解释是：“群众的看法和态度”，对争议或争论给出的解释是：“各执己见，互相辩论”。
+群众有各自的看法和态度，并站在自己的角度进行辩论，这是无可厚非的，也是必然会发生的现象，甚至是文化和思想繁荣的表现。换个角度说，“百花齐放，百家争鸣”不就是舆情和争议的另一种形式吗？
+我认为，舆情和争议的背后，是民众对于事件真相的追求和内心情感的表达。对于一个尚未形成共识的公共事件，每个人都有自己的猜测、立场和感受，把它们表达出来，就形成了舆情和争议。
+如果资本或权力怀着包容的态度去对待它们，就能了解民众的需求，并改进产品和服务，或者调整政策。
+如果资本或权力怀着对抗的态度去对待它们，就会感到恐惧，担心销量被影响，或者担心社会失去稳定。
+现如今，资本和权力都试图站在民众之上，去管理民众的表达。然而这种想法是必然失败的。因为资本和权力本就脱胎于民众，并因为民众的支持而存在。它们试图对抗民众，就像一个人试图切断自己的腿一样，是荒唐的想法。
+这就是每当看到公共关系分析文时，我都会产生厌恶感的原因。这个学科从诞生以来，一直就是被资本和权力不正当利用的学科，又怎么可能繁荣发展呢？
+发布信息 本文初次发布于：2024 年 7 月 9 日，最后修改于：2025 年 8 月 13 日。
+文章链接：
+Rosa Thomas 的博客
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-09 16:59:00 +0800 CST'>9 Jul 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>26 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 我对公共关系学的思考" href="https://rosa-thomas.me/en/posts/2025/07/reflections-on-public-relations-studies/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我对蒋多多的思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 我对蒋多多，唯有敬佩。
+就算赌上自己的前途，也要说出真心想说的话。这需要莫大的勇气和真诚。她做到了一切，成为舆论焦点，然后归隐乡村，肩负起了原本就属于她的平凡命运。她至今为止的人生，平凡而绚丽，渺小而伟大。
+而批判者的言论中，反映了中国社会的诸多不良现象。举几个例子：
+1 “她本来可以考上好大学，可惜了。” 在绝大多数人的观念中，好的人生都是相似的。因此我们习惯于用同一套评价标准评判任何人。
+然而对她而言，表达才是生存之上最重要的事情。后来她面对媒体，在全国人民面前表达了自己的想法。这就是她心中最大的成功了。
+表达过后，她回归了正常的生活，没有成为家庭和社会的负担。她也承担了表达的后果，堪称伟大。
+我们可以发现，社会的评判标准过于单一了。如果站在不一样的角度，那么更多有才华的人就会被发掘出来。
+换个角度，如果社会更包容一些，也许她的才华就能早被发现，写作激情早点得到释放，就不会被埋没了。
+2 “她什么也没有改变” 这样的观点只考虑了结果，没有考虑道路的曲折性。
+任何改变都不是一蹴而就的。先有零星的议论声，再有一两声呐喊，随后是众人的回应，最后是集体讨论，制定方案，改变政策。
+我相信任何行动都是有意义的。今天的一举一动，就可能成为种子，在未来长成参天大树。
+3 “她被洗脑了” 事实上，她是通过自己的感悟和思考，辅以杂志上的文章，得到的这种观点，所以观点主要来源于自己。
+为什么有人认为她被洗脑了呢？因为人们相信，同一个国家，同样的制度，应该有同样的看法。所以异见只能来自于异国，通过灌输，进入国人的大脑。
+我们已经看到，缺乏多元性，是当今社会的不足之一。在这样的社会中，独立思考的人往往会被当作被洗脑的人，也是很讽刺了。
+4 “告别应试教育之后呢？有什么方案？” 这是一个值得讨论的话题，但批判一般先于解决方案，不能因为没能给出解决方案而否定批判的尝试。
+发布信息 本文初次发布于：2025 年 7 月 3 日，最后修改于：2025 年 8 月 13 日。
+文章链接：
+Rosa Thomas 的博客
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-03 06:55:00 +0800 CST'>3 Jul 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>40 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 我对蒋多多的思考" href="https://rosa-thomas.me/en/posts/2025/07/reflections-on-jiang-duoduo/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我对一个乘法问题的思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 课本编写和实际学习之间存在一些矛盾，其中之一便是：
+数学课本上，同样的知识只能写一遍；但是实际学习中，应该在合适的时机重温学过的知识，以加深理解。
+比如学习交换律、结合律、分配律等运算定律之时，就是重温乘法含义的合适时机：
+一
+自然数的乘法，可以理解成反复做加法，这是乘法最初的含义。依照这个定义，两个乘数存在地位上的不同，因此不能颠倒顺序。
+至于到底写成 2×3 还是 3×2，取决于书写顺序是如何规定的。比如 2&#43;2&#43;2，在中国旧教材中写成 2×3，而在美国教材中写成 3×2。但无论如何，只要约定了一种书写顺序，然后颠倒两乘数顺序，式子的含义就发生了变化。
+二
+随着进一步学习，我们用字母表示数，从而进入了代数学。在代数计算中，我们利用的是交换律、结合律、分配律等运算定律，而不是具体的运算算法。比如单项式的合并同类项中，首先用交换律把相同幂次的字母移动到一起，再用结合律添括号，再用分配律提出系数，整个过程中没有出现任何具体的数的乘法。
+因此我们可以逐渐忽略乘法的实际含义，把乘法看成一种更抽象的运算。这种运算满足交换律、结合律、分配律等运算定律。
+我们分析这些运算定律，发现两个乘数是对称的，即交换两乘数后的式子与原式恒等，因此两乘数的地位相同。这便与之前的认知产生差异。由于代数运算的应用越来越普遍，人们便越来越倾向于忽略两乘数地位的不同。
+三
+在抽象代数中，我们完全忽略乘法的具体算法，而认为乘法是满足若干性质的运算。从而达到“目中无数”的抽象境界。
+此时，乘法中两乘数的地位完全相同，毫无区别。
+可见，乘法的含义，随着认知的深入而不断变化。而两乘数的地位，变得越来越接近，直至完全相同。那么，对文章中问题的回答，也产生了变化。
+而目前的教材，乃至教学中，还是在追求一步到位，有意减少对已有知识的修正。我认为这种思想是不可取的。学习的过程，除了学习新知之外，便是对已有知识的重构乃至推翻重来。在科学史上，新理论推翻旧理论恰恰是最值得反思和回味的，而我们的教育却刻意避免之。这是一种遗憾。
+多次教育改革的尝试，都只是对若干具体问题寻求更好的答案，而不是对教育思想的改革。如果人们还是坚持认为，同一个问题在任何情况下，都只能有一个正确答案，那么教育改革就永远无法令人彻底满意。
+学习重在重温，改革重在思想。
+发布信息 本文初次发布于：2025 年 7 月 2 日，最后修改于：2025 年 8 月 13 日。
+文章链接：
+Rosa Thomas 的博客
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-02 21:02:00 +0800 CST'>2 Jul 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>40 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 我对一个乘法问题的思考" href="https://rosa-thomas.me/en/posts/2025/07/reflections-on-multiplication/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我对随笔的思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 偶然翻出自己初、高中时的周记本。成长过程中的内心往事重新回到脑海……
+一方面，我惊讶于当年自己的思考之敏捷和语言之精妙，不禁感谢语文老师培养的写随笔的习惯。
+另一方面，我意外地发现，当下正在思考的问题，在当时就出现了萌芽。十多年过去了，我已经沿着曲折的道路走出了很远，也尝试了很多可能。随着对问题的探究，我身边的同行者越来越少。我感到刺骨的孤独，却仍然没能彻底解决这些问题。
+我们因渺小而前进，因前进而强大，因强大而犯错，因犯错而渺小。
+过去的事情永远不会忘记，只是一时想不起来。尽管如此，过往经历已经塑造了我，并为未来埋下伏笔。
+随着不时的回望，我拾起零星的记忆碎片。这些碎片告诉我，当下的我，是自己主动选择的结果，也符合自己心中的理想模样。一切都是命中注定。
+条条大路通罗马，自古华山一条路。无论摆在眼前的选择有多少，都没有关系，也不要回头，要勇敢地往前走。
+发布信息 本文初次发布于：2025 年 7 月 2 日，最后修改于：2025 年 8 月 13 日。
+文章链接：
+Rosa Thomas 的博客
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-02 17:45:00 +0800 CST'>2 Jul 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>24 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 我对随笔的思考" href="https://rosa-thomas.me/en/posts/2025/07/reflections-on-essays/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我心目中理想的围棋规则
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前言 笔者以新西兰规则、智运会规则为灵感来源，编辑了一份心目中理想的围棋规则，供您参考。
+正文 19 x 19 网格是由 19 条水平线段和 19 条竖直线段组成的网格，包括 361 个交叉点。
+黑棋是由至少 181 枚黑色棋子组成的，白棋是由至少 180 枚白色棋子组成的。
+对局方是只持有黑棋或白棋之一的个人或团队，分别称为黑方和白方。
+一盘对局是在一块带有 19 x 19 网格的棋盘上进行的，由两对局方（黑方和白方）参与。
+两个相邻交叉点是棋盘上由一条线段连接的两个交叉点，且这条线段上没有其他的交叉点。
+如果棋盘上两枚颜色相同的棋子满足以下两个条件之一，那么它们是相连的。
+两枚棋子在相邻交叉点上； 两枚棋子都与第三枚棋子相连。 棋盘上一枚棋子的气是满足以下两个条件之一的没有放置棋子的交叉点。
+与该棋子所在交叉点相邻的交叉点； 与与该棋子相连的任何一枚棋子所在交叉点相邻的交叉点。 一个对局方的一个实着手由以下三个步骤组成。
+在棋盘上一个没有放置棋子的交叉点上放置一枚该对局方持有的棋子； （如果有的话）将棋盘上另一对局方放置的所有没有气的棋子从棋盘上移除； （如果有的话）将棋盘上该对局方放置的所有没有气的棋子从棋盘上移除。 一个对局方的一个虚着手不在棋盘上放置，也不从棋盘上移除任何棋子。
+一个着手后，一个交叉点的状态的确定方法如下。
+如果该交叉点上没有放置棋子，那么状态为空； 如果该交叉点上放置着黑色棋子，那么状态为黑； 如果该交叉点上放置着白色棋子，那么状态为白。 一个着手后，棋盘的状态是棋盘上所有交叉点的状态组成的总体。
+一个对局方的一个禁着手是满足以下条件的实着手。
+进行该实着手后，棋盘的状态与该对局方之前进行的任何一个实着手后的棋盘的状态相同。
+一个着手是一个非禁着手的实着手或一个虚着手。
+对局开始时，棋盘上的所有交叉点上都不放置棋子。两对局方轮流进行着手，从黑方开始。
+如果一枚棋子满足以下条件之一，那么它是死子。
+该棋子曾被放置在棋盘上，且被一个（非禁着手的实）着手从棋盘上移除； 该棋子在棋盘上，但两对局方均认为，随着对局的进行，该棋子将会被一个（非禁着手的实）着手从棋盘上移除。 一个活子是棋盘上非死子的棋子。
+一个对局方的目是满足以下两个条件之一的交叉点。
+该对局方放置的活子所在的交叉点； 与该对局方的任何一目相邻，且没有放置活子的交叉点。 一盘对局中，如果在首次虚着手后出现连续的两个虚着手，那么对局进入预备终止阶段。在该阶段中，两对局方先将死子从棋盘上移除，并标记双方的目。
+如果一盘对局进入预备终止阶段，且两对局方对死子的移除和目的标记达成一致，那么对局终止。
+如果一盘对局进入预备终止阶段，但两对局方对死子的移除或目的标记无法达成一致，那么对局恢复。对局恢复时，两对局方将对局恢复到最后一个虚着手之后的状态，从该虚着手的对方开始进行着手。
+如果在一盘对局中，规定白方的前 n-1 个着手是虚着手，那么该对局是让 n 子对局。
+一个对局方的贴目是一个规定的数值。
+如果在一盘对局中，规定黑方和白方的贴目都是 0，那么该对局是让先对局。
+如果在一盘对局中，规定黑方的贴目是 0，白方的贴目是 7，那么该对局是分先对局。
+一个对局方的点是该对局方的目的数量加该对局方的贴目。
+一盘对局的首次虚着手是一盘对局的第一个虚着手。
+对局终止时，获胜对局方的确定方法如下。
+如果两对局方的点不同，那么拥有最多点的对局方获胜； 如果两对局方的点相同，那么进行首次虚着手的对局方获胜。 发布信息 本文初次发布于：2025 年 4 月 3 日，最后修改于：2025 年 8 月 12 日。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-03 02:50:00 +0800 CST'>3 Apr 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>88 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 我心目中理想的围棋规则" href="https://rosa-thomas.me/en/posts/2025/04/my-go-rules/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">伍鸿熙《数学家讲解小学数学》读书笔记（1）——前言和致读者
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1 前言 1.1 主要内容 本书的主要内容是：小学数学中的数和运算．
+1.2 读者对象 本书的读者对象是：小学数学教师．
+1.3 特点 简洁：因为成人的注意力时间更长，并且熟练程度更高； 合乎逻辑； （小心地、循序渐进地）利用符号语言； 讨论一些初中课题：数学教师所知道的知识应该超过他所教课程的水平． 1.4 数学家如何理解数学 理解一个概念，意味着理解它的： 准确定义， 直观内容， 为何需要它， 在什么情况下发挥作用； 理解一个技巧（或定理），意味着理解它的： 操作方法， 使用条件， 证明方法， 发现动机， 灵活运用． 1.5 本书的连贯性 本书全面、系统地展示了自然数、分数和有理数的数学发展过程，不违背学习规律，符合逻辑．
+1.5.1 一些反面例子 中小学数学教科书中出现了离谱的语言．例如：
+利用分数乘法解释等价分数定理； 分数及其运算与自然数及其运算毫无关系； 十进制小数与分数有较大区别． 1.5.2 本书的处理方法 利用长除法把分数转化为小数的方法就是分数乘法公式的推论； 等价分数定理在理解分数的过程中具有重要作用； 四则运算从自然数到分数、有理数、实数的演化过程是连贯的． 1.5.3 不连贯的数学是数学界与教育界长期分离的结果 有些数学家认为教育是个无底洞； 有些数学家认为中小学数学微不足道：“没有什么音乐是粗俗的，除非演奏者的演奏方式使它听起来粗俗．” 1.6 本书的目的 为数学教育者的研究提供一个更扎实的起点； 为教科书出版社提供一些资源． 2 致读者 2.1 如何阅读这本书 “在所有的课程中，现代教育的一个主要‘罪行’是不要求学生们付出艰辛的努力．”读这本书就是要付出艰辛的努力．但是只要努力，基本上就能掌握本书的一切知识．
+2.1.1 数学恐惧症 产生数学恐惧症的原因可能是，在你还没有充分准备好或理解好数学的情况下，（教师）就多次要求你做数学题，并且只要按照规定好的步骤去做即可，之后就任由你自生自灭．
+2.2 你可以学到这些 2.2.1 体会到数学内在的精确性 例如，本书首先给出分数乘法的精确含义，进而用这个定义连同逻辑推理一起解释乘法运算步骤的正确性，并说明为什么这样做有助于解决问题．
+普通的教科书在引入概念或技巧时一般不给出定义，而是通过在各种背景下给出各种例子来做示范．这种教法是无效的．1
+2.2.2 强调精确定义的重要性 例如，把有理数 \(\dfrac ab\) 定义为方程 \(bx = a\) 的解，但接下来完全忽略了定义．这样教育的结果，就是使学生感觉定义是多余的．2
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-20 17:57:00 +0800 CST'>20 Jan 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>102 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 伍鸿熙《数学家讲解小学数学》读书笔记（1）——前言和致读者" href="https://rosa-thomas.me/en/posts/2025/01/hunghsi-wu-01-preface/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">对中小学数学解题套路的批判
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 学习中小学数学，有一种捷径是记下各种题型对应的解题套路，解题时抓住题目特点对号入座。
+这种方法固然对解题极有帮助，却让学习数学成为背诵，增大了记忆负担。
+另一方面，解题套路是为了绕过更深的知识，降低思维难度而创造的路。但这种创造不同于能编入数学课本的解题方法，它们往往存在不合理的简化，可能与后续知识有冲突和矛盾，导致认知混乱，拖累今后的学习。
+更重要的是，解题时本应通过理解概念、运用规律和逻辑推理得到解法，解题套路却绕过了这一切，把解题变成了题型识别和模仿的过程。于是数学中非常重要的抽象思维和理解能力都没有训练到，对培养数学人才形成一定阻碍。
+分析到目前为止，如果学生没有思维天赋，只想通过记忆和模仿，在考试中取得好成绩，并不想成为数学家，那么训练解题套路仍然是一种好方法，所以我还想谈一谈更大的话题——
+题型分类和解题套路的创造，这些都是老师完成的。老师把这些知识灌输给学生，学生就失去了自己的思考。学生不需要思考这些方法为什么是对的，有没有更好的做法，只要按照既有的框架去做就可以了。老师的思考取代了学生的思考，于是学生的独立思考能力被压抑了。无论是追根究底的科学精神，还是独立思考的人文素养都没有得到培养。甚至说，独立的人格也没能养成。
+我认为独立的人格是一种脆弱的品质，只有在良好的环境中才能自发生成，大多数情况下都需要刻意培养。而且独立的人格并不是人文学科的专利，它在生活的方方面面都有体现，也在学习的各个方面都要着力培养。
+我们培养的，只是模仿能力超强的工程师和科研人员，却少有敢为人先的科学家和具有真知灼见的学者。
+对于大的教育环境来说，这一切是无奈中的必然。但是作为个体，或许可以做一些调整和探索。至少不被环境同化，走出自己的路。
+发布信息 本文初次发布于：2024 年 12 月 15 日，最后修改于：2025 年 8 月 13 日。
+文章链接：
+Rosa Thomas 的博客 知乎 </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-15 18:38:00 +0800 CST'>15 Dec 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>27 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 对中小学数学解题套路的批判" href="https://rosa-thomas.me/en/posts/2024/12/criticism-of-mathematics-education/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">一起建造属于大家的白色巨塔——电影《你想活出怎样的人生》观后感
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 我们热爱宫崎骏的电影，究竟是为了什么呢？我个人曾痴迷于剧情和设定，后来钻研主旨和隐喻，现在发现细腻的情感才是最引人入胜之处。
+《千与千寻》在这些方面，无疑是宫崎骏的巅峰之作。前半小时的紧张感与尾声处列车上的平静形成对比，让人难以忘怀。与千寻一起经历了这么多波折，一定可以勇敢地面对生活吧。
+《幽灵公主》也是，阿席达卡一上来就遭遇诅咒，又背负了整个族群的命运，于是踏上了寻找灾难根源的旅程。宏大的叙事和人与自然那无解的矛盾让人心情沉重。
+新世纪以来，宫崎骏的电影就越来越难懂。《哈尔》、《波妞》究竟在讲什么，我并没有把握说明白。好在除了主旨之外，画面、音乐、剧情、人物形象都十分惊艳，能把人一下子就吸引住。
+然而《你想活出怎样的人生》真是一言难尽。现在是 21 世纪，商业世界无奇不有。观众已经见识了太多出色的制作、画面、音乐和稀奇古怪的设定。《人生》并没有像之前的电影那样，拿出让人惊艳的东西。
+剧情前半部分看上去十分平稳、不慌不忙，有稳如泰山的感觉。可是主角进入异世界之后，行为就非常难以理解了。异世界的经历究竟意味着什么，哇啦哇啦、鹈鹕都代表着什么，我基本上没有看明白。因此我感到一头雾水，观影时也没有太多情绪上的起伏。
+对于主旨我稍微有点想法，也仅仅是猜测（下面会谈到）。
+总之这是一部非常私人的电影，并不是为大多数观众制作的。观影之前需要有心理准备。
+下面简单说说我的理解吧。
+电影的世界设定在二战期间。真人的父亲在军火企业上班，以制造武器来维持自家小康的生活。宫崎骏的父亲也曾开办军火企业，宫老爷子曾对此十分自责。他一度恨他父亲，不明白他为什么要发战争财。
+宫父作为老百姓，他的想法很简单。普通人为了生存而活，有钱人为了更好地生存而活。哪里能赚钱就去哪里做生意，以战争为生活来源不是自己的错误。
+异世界里，舅公维持着美丽的塔。脆弱的塔支撑着相对美好的异世界。可是这个世界里也有活不下去的人（鹈鹕、亡灵），也有弱肉强食（鹈鹕吃哇啦哇啦），也摇摇欲坠。那是舅公的力量不足导致的。舅公想要让真人继承他的事业，去用毫无恶意的石头制作属于自己的更美丽的塔。
+可是真人说，自己的伤口是他存有恶念的证据。他曾想借助大人的手去制裁欺负他的同学，所以才故意弄伤了自己。他并不是完美的人，因而造不出完美的塔。
+普通老百姓难以改变战争的事实，难道有权力的人就能改变了吗？哪怕领导人再善良再开明，也难以阻挡时代的洪流。个人的力量是有限的。战争有的时候是必然要走的一步棋。为了国家的命运、民族的未来，有时需要一战。
+和平是脆弱的。鹦鹉大王（可能是法西斯主义者的象征）的利剑一挥，善良开明的舅公（是宫崎骏的好友高畑勋的象征）苦心经营的塔就会碎成两半，整个异世界也将不复存在。
+既然这样，出路何在？宫老爷子也曾困惑。他在《起风了》中无奈地说道：“起风了，唯有努力生存”。在艰苦动荡的年代，普通人能做的似乎只有尽力活着。
+在本片中，宫崎骏在矛盾中更进一步，给出了更加有力的生存方式和态度。主角真人最终和舅公、火美告别，回到了战争中的现实世界，回到继母身边，与之和解。火美也勇敢地接纳自己在火灾中去世的命运。
+第二步也很明确，就是结交朋友。真人说，自己在现实世界也一定能结交到火美和苍鹭那样的朋友。朋友可以在逆境中互相支持着走下去。朋友也是自己的一面镜子，当自己的行为逐渐走向偏颇的时候，好的朋友会对此作出反应，以便纠正。
+这个世界，有弱肉强食，有艰难痛苦，有无可奈何。这不是少数英雄能够改变的，只能一步步来。先在世界中生存下来，再了解这个世界，尽力净化自己的内心，然后和大家一起，建造属于所有人的白色巨塔。
+第三步，相信年轻人。
+宫崎骏已经逐渐老去，再伟大的人也会有老去的一天。文化创作不能只依靠几位大师。好的创作需要土壤，需要不那么紧迫的社会氛围，需要包容的文化环境，需要投入巨大的人力物力，这些都不是大师一己之力所能完成的。只有不断进步的社会，才能涌现大师；也只有大师，才能创作出启发大众的作品，回馈社会。
+商业世界是很多人批判的世界。商业世界有很多缺点，甚至称得上丑陋。可是商业世界的商品堆积，也让人享受到了很多便利，让人的视野得以打开，让人的审美得以提高。没有什么世界是完美的，也没有什么世界是绝对黑暗的。人们都是清浊并吞的生物。因此，放弃对完美社会的幻想，放弃一步到位的设想吧。从现在开始，一点点地让世界更美好。
+从个人开始，实践、交流、读书、思考；
+从身边开始，建立亲密关系，互相促进；
+从参加活动开始，分辨同类，结识彼此；
+从相互结识，到建立团体，到形成制度；
+从互相帮助，到拯救生命，到充实心灵；
+从温饱，到小康，到富裕；
+从富裕，到繁荣，到幸福；
+从幸福，到充盈，到和谐。
+我个人相信，随着社会的前进，一切都会变好的。如果社会没能进步，那人类手中的愈发强大的力量可能会失控，那我也坦然接受文明灭亡的可能。
+一切，尽力而为；一切，顺其自然。
+发布信息 本文初次发布于：2024 年 4 月 3 日，最后修改于：2025 年 8 月 16 日。
+文章链接：
+Rosa Thomas 的博客 知乎 豆瓣 </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-03 23:46:00 +0800 CST'>3 Apr 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>53 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 一起建造属于大家的白色巨塔——电影《你想活出怎样的人生》观后感" href="https://rosa-thomas.me/en/posts/2024/04/the-boy-and-the-heron/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://rosa-thomas.me/en/">Rosa Thomas&#39;s blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

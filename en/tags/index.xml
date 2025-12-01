@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Rosa Thomas&#39;s blog</title>
+    <link>https://rosa-thomas.me/en/tags/</link>
+    <description>Recent content in Tags on Rosa Thomas&#39;s blog</description>
+    <image>
+      <title>Rosa Thomas&#39;s blog</title>
+      <url>https://rosa-thomas.me/images/cherry.png</url>
+      <link>https://rosa-thomas.me/images/cherry.png</link>
+    </image>
+    <generator>Hugo -- 0.147.7</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Jul 2025 16:59:00 +0800</lastBuildDate>
+    <atom:link href="https://rosa-thomas.me/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Essay</title>
+      <link>https://rosa-thomas.me/en/tags/essay/</link>
+      <pubDate>Wed, 09 Jul 2025 16:59:00 +0800</pubDate>
+      <guid>https://rosa-thomas.me/en/tags/essay/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>https://rosa-thomas.me/en/tags/mathematics/</link>
+      <pubDate>Wed, 02 Jul 2025 21:02:00 +0800</pubDate>
+      <guid>https://rosa-thomas.me/en/tags/mathematics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Go</title>
+      <link>https://rosa-thomas.me/en/tags/go/</link>
+      <pubDate>Thu, 03 Apr 2025 02:50:00 +0800</pubDate>
+      <guid>https://rosa-thomas.me/en/tags/go/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hung-Hsi Wu</title>
+      <link>https://rosa-thomas.me/en/tags/hung-hsi-wu/</link>
+      <pubDate>Mon, 20 Jan 2025 17:57:00 +0800</pubDate>
+      <guid>https://rosa-thomas.me/en/tags/hung-hsi-wu/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Go | Rosa Thomas&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="A personal blog about mathematics, free software, and Go">
+<meta name="author" content="me">
+<link rel="canonical" href="https://rosa-thomas.me/en/tags/go/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="apple-touch-icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="mask-icon" href="https://rosa-thomas.me/images/cherry.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://rosa-thomas.me/en/tags/go/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/tags/go/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta property="og:url" content="https://rosa-thomas.me/en/tags/go/">
+  <meta property="og:site_name" content="Rosa Thomas&#39;s blog">
+  <meta property="og:title" content="Go">
+  <meta property="og:description" content="A personal blog about mathematics, free software, and Go">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:title" content="Go">
+<meta name="twitter:description" content="A personal blog about mathematics, free software, and Go">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosa-thomas.me/en/" accesskey="h" title="Rosa Thomas&#39;s Blog (Alt + H)">
+                <img src="https://rosa-thomas.me/images/cherry.png" alt="" aria-label="logo"
+                    height="25">Rosa Thomas&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-cn/" title="简体中文"
+                                aria-label="简体中文">Zh-Cn</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosa-thomas.me/en/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://rosa-thomas.me/en/">Home</a>&nbsp;»&nbsp;<a href="https://rosa-thomas.me/en/tags/">Tags</a></div>
+  <h1>
+    Go
+    <a href="/en/tags/go/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我心目中理想的围棋规则
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前言 笔者以新西兰规则、智运会规则为灵感来源，编辑了一份心目中理想的围棋规则，供您参考。
+正文 19 x 19 网格是由 19 条水平线段和 19 条竖直线段组成的网格，包括 361 个交叉点。
+黑棋是由至少 181 枚黑色棋子组成的，白棋是由至少 180 枚白色棋子组成的。
+对局方是只持有黑棋或白棋之一的个人或团队，分别称为黑方和白方。
+一盘对局是在一块带有 19 x 19 网格的棋盘上进行的，由两对局方（黑方和白方）参与。
+两个相邻交叉点是棋盘上由一条线段连接的两个交叉点，且这条线段上没有其他的交叉点。
+如果棋盘上两枚颜色相同的棋子满足以下两个条件之一，那么它们是相连的。
+两枚棋子在相邻交叉点上； 两枚棋子都与第三枚棋子相连。 棋盘上一枚棋子的气是满足以下两个条件之一的没有放置棋子的交叉点。
+与该棋子所在交叉点相邻的交叉点； 与与该棋子相连的任何一枚棋子所在交叉点相邻的交叉点。 一个对局方的一个实着手由以下三个步骤组成。
+在棋盘上一个没有放置棋子的交叉点上放置一枚该对局方持有的棋子； （如果有的话）将棋盘上另一对局方放置的所有没有气的棋子从棋盘上移除； （如果有的话）将棋盘上该对局方放置的所有没有气的棋子从棋盘上移除。 一个对局方的一个虚着手不在棋盘上放置，也不从棋盘上移除任何棋子。
+一个着手后，一个交叉点的状态的确定方法如下。
+如果该交叉点上没有放置棋子，那么状态为空； 如果该交叉点上放置着黑色棋子，那么状态为黑； 如果该交叉点上放置着白色棋子，那么状态为白。 一个着手后，棋盘的状态是棋盘上所有交叉点的状态组成的总体。
+一个对局方的一个禁着手是满足以下条件的实着手。
+进行该实着手后，棋盘的状态与该对局方之前进行的任何一个实着手后的棋盘的状态相同。
+一个着手是一个非禁着手的实着手或一个虚着手。
+对局开始时，棋盘上的所有交叉点上都不放置棋子。两对局方轮流进行着手，从黑方开始。
+如果一枚棋子满足以下条件之一，那么它是死子。
+该棋子曾被放置在棋盘上，且被一个（非禁着手的实）着手从棋盘上移除； 该棋子在棋盘上，但两对局方均认为，随着对局的进行，该棋子将会被一个（非禁着手的实）着手从棋盘上移除。 一个活子是棋盘上非死子的棋子。
+一个对局方的目是满足以下两个条件之一的交叉点。
+该对局方放置的活子所在的交叉点； 与该对局方的任何一目相邻，且没有放置活子的交叉点。 一盘对局中，如果在首次虚着手后出现连续的两个虚着手，那么对局进入预备终止阶段。在该阶段中，两对局方先将死子从棋盘上移除，并标记双方的目。
+如果一盘对局进入预备终止阶段，且两对局方对死子的移除和目的标记达成一致，那么对局终止。
+如果一盘对局进入预备终止阶段，但两对局方对死子的移除或目的标记无法达成一致，那么对局恢复。对局恢复时，两对局方将对局恢复到最后一个虚着手之后的状态，从该虚着手的对方开始进行着手。
+如果在一盘对局中，规定白方的前 n-1 个着手是虚着手，那么该对局是让 n 子对局。
+一个对局方的贴目是一个规定的数值。
+如果在一盘对局中，规定黑方和白方的贴目都是 0，那么该对局是让先对局。
+如果在一盘对局中，规定黑方的贴目是 0，白方的贴目是 7，那么该对局是分先对局。
+一个对局方的点是该对局方的目的数量加该对局方的贴目。
+一盘对局的首次虚着手是一盘对局的第一个虚着手。
+对局终止时，获胜对局方的确定方法如下。
+如果两对局方的点不同，那么拥有最多点的对局方获胜； 如果两对局方的点相同，那么进行首次虚着手的对局方获胜。 发布信息 本文初次发布于：2025 年 4 月 3 日，最后修改于：2025 年 8 月 12 日。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-03 02:50:00 +0800 CST'>3 Apr 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>88 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 我心目中理想的围棋规则" href="https://rosa-thomas.me/en/posts/2025/04/my-go-rules/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://rosa-thomas.me/en/">Rosa Thomas&#39;s blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

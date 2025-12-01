@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Go on Rosa Thomas&#39;s blog</title>
+    <link>https://rosa-thomas.me/en/tags/go/</link>
+    <description>Recent content in Go on Rosa Thomas&#39;s blog</description>
+    <image>
+      <title>Rosa Thomas&#39;s blog</title>
+      <url>https://rosa-thomas.me/images/cherry.png</url>
+      <link>https://rosa-thomas.me/images/cherry.png</link>
+    </image>
+    <generator>Hugo -- 0.147.7</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 03 Apr 2025 02:50:00 +0800</lastBuildDate>
+    <atom:link href="https://rosa-thomas.me/en/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我心目中理想的围棋规则</title>
+      <link>https://rosa-thomas.me/en/posts/2025/04/my-go-rules/</link>
+      <pubDate>Thu, 03 Apr 2025 02:50:00 +0800</pubDate>
+      <guid>https://rosa-thomas.me/en/posts/2025/04/my-go-rules/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;笔者以新西兰规则、智运会规则为灵感来源，编辑了一份心目中理想的围棋规则，供您参考。&lt;/p&gt;
+&lt;h2 id=&#34;正文&#34;&gt;正文&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;19 x 19 网格&lt;/strong&gt;是由 19 条水平线段和 19 条竖直线段组成的网格，包括 361 个交叉点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;黑棋&lt;/strong&gt;是由至少 181 枚黑色棋子组成的，&lt;strong&gt;白棋&lt;/strong&gt;是由至少 180 枚白色棋子组成的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;对局方&lt;/strong&gt;是只持有黑棋或白棋之一的个人或团队，分别称为&lt;strong&gt;黑方&lt;/strong&gt;和&lt;strong&gt;白方&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一盘&lt;strong&gt;对局&lt;/strong&gt;是在一块带有 19 x 19 网格的棋盘上进行的，由两对局方（黑方和白方）参与。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;两个&lt;strong&gt;相邻&lt;/strong&gt;交叉点是棋盘上由一条线段连接的两个交叉点，且这条线段上没有其他的交叉点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果棋盘上两枚颜色相同的棋子满足以下两个条件之一，那么它们是&lt;strong&gt;相连&lt;/strong&gt;的。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;两枚棋子在相邻交叉点上；&lt;/li&gt;
+&lt;li&gt;两枚棋子都与第三枚棋子相连。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;棋盘上一枚棋子的&lt;strong&gt;气&lt;/strong&gt;是满足以下两个条件之一的没有放置棋子的交叉点。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;与该棋子所在交叉点相邻的交叉点；&lt;/li&gt;
+&lt;li&gt;与与该棋子相连的任何一枚棋子所在交叉点相邻的交叉点。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个对局方的一个&lt;strong&gt;实着手&lt;/strong&gt;由以下三个步骤组成。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在棋盘上一个没有放置棋子的交叉点上放置一枚该对局方持有的棋子；&lt;/li&gt;
+&lt;li&gt;（如果有的话）将棋盘上另一对局方放置的所有没有气的棋子从棋盘上移除；&lt;/li&gt;
+&lt;li&gt;（如果有的话）将棋盘上该对局方放置的所有没有气的棋子从棋盘上移除。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个对局方的一个&lt;strong&gt;虚着手&lt;/strong&gt;不在棋盘上放置，也不从棋盘上移除任何棋子。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个着手后，一个&lt;strong&gt;交叉点的状态&lt;/strong&gt;的确定方法如下。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果该交叉点上没有放置棋子，那么状态为空；&lt;/li&gt;
+&lt;li&gt;如果该交叉点上放置着黑色棋子，那么状态为黑；&lt;/li&gt;
+&lt;li&gt;如果该交叉点上放置着白色棋子，那么状态为白。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个着手后，&lt;strong&gt;棋盘的状态&lt;/strong&gt;是棋盘上所有交叉点的状态组成的总体。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个对局方的一个&lt;strong&gt;禁着手&lt;/strong&gt;是满足以下条件的实着手。&lt;/p&gt;
+&lt;p&gt;进行该实着手后，棋盘的状态与该对局方之前进行的任何一个实着手后的棋盘的状态相同。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个&lt;strong&gt;着手&lt;/strong&gt;是一个非禁着手的实着手或一个虚着手。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对局开始时，棋盘上的所有交叉点上都不放置棋子。两对局方轮流进行着手，从黑方开始。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果一枚棋子满足以下条件之一，那么它是&lt;strong&gt;死子&lt;/strong&gt;。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;该棋子曾被放置在棋盘上，且被一个（非禁着手的实）着手从棋盘上移除；&lt;/li&gt;
+&lt;li&gt;该棋子在棋盘上，但两对局方均认为，随着对局的进行，该棋子将会被一个（非禁着手的实）着手从棋盘上移除。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个&lt;strong&gt;活子&lt;/strong&gt;是棋盘上非死子的棋子。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个对局方的&lt;strong&gt;目&lt;/strong&gt;是满足以下两个条件之一的交叉点。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;该对局方放置的活子所在的交叉点；&lt;/li&gt;
+&lt;li&gt;与该对局方的任何一目相邻，且没有放置活子的交叉点。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一盘对局中，如果在首次虚着手后出现连续的两个虚着手，那么对局进入&lt;strong&gt;预备终止阶段&lt;/strong&gt;。在该阶段中，两对局方先将死子从棋盘上移除，并标记双方的目。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果一盘对局进入预备终止阶段，且两对局方对死子的移除和目的标记达成一致，那么对局&lt;strong&gt;终止&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果一盘对局进入预备终止阶段，但两对局方对死子的移除或目的标记无法达成一致，那么对局&lt;strong&gt;恢复&lt;/strong&gt;。对局恢复时，两对局方将对局恢复到最后一个虚着手之后的状态，从该虚着手的对方开始进行着手。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果在一盘对局中，规定白方的前 n-1 个着手是虚着手，那么该对局是&lt;strong&gt;让 n 子对局&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个对局方的&lt;strong&gt;贴目&lt;/strong&gt;是一个规定的数值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果在一盘对局中，规定黑方和白方的贴目都是 0，那么该对局是&lt;strong&gt;让先对局&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果在一盘对局中，规定黑方的贴目是 0，白方的贴目是 7，那么该对局是&lt;strong&gt;分先对局&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个对局方的&lt;strong&gt;点&lt;/strong&gt;是该对局方的目的数量加该对局方的贴目。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一盘对局的&lt;strong&gt;首次虚着手&lt;/strong&gt;是一盘对局的第一个虚着手。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对局终止时，&lt;strong&gt;获胜&lt;/strong&gt;对局方的确定方法如下。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果两对局方的点不同，那么拥有最多点的对局方获胜；&lt;/li&gt;
+&lt;li&gt;如果两对局方的点相同，那么进行首次虚着手的对局方获胜。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;发布信息&#34;&gt;发布信息&lt;/h2&gt;
+&lt;p&gt;本文初次发布于：2025 年 4 月 3 日，最后修改于：2025 年 8 月 12 日。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
