@@ -2,12 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rosa-thomas.me/en/tags/arch-linux/</loc>
+    <lastmod>2025-08-11T23:18:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/tags/arch-linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rosa-thomas.me/en/tags/arch-linux/"
+                />
+  </url><url>
+    <loc>https://rosa-thomas.me/en/tags/free-software/</loc>
+    <lastmod>2025-08-11T23:18:21+08:00</lastmod>
+  </url><url>
+    <loc>https://rosa-thomas.me/en/tags/linux/</loc>
+    <lastmod>2025-08-11T23:18:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/tags/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rosa-thomas.me/en/tags/linux/"
+                />
+  </url><url>
     <loc>https://rosa-thomas.me/en/posts/</loc>
     <lastmod>2025-08-11T23:18:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -19,8 +48,8 @@
     <lastmod>2025-08-11T23:18:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -28,15 +57,12 @@
                 href="https://rosa-thomas.me/en/"
                 />
   </url><url>
-    <loc>https://rosa-thomas.me/en/tags/essay/</loc>
-    <lastmod>2025-07-09T16:59:00+08:00</lastmod>
-  </url><url>
     <loc>https://rosa-thomas.me/en/tags/</loc>
-    <lastmod>2025-07-09T16:59:00+08:00</lastmod>
+    <lastmod>2025-08-11T23:18:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/tags/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -44,12 +70,28 @@
                 href="https://rosa-thomas.me/en/tags/"
                 />
   </url><url>
+    <loc>https://rosa-thomas.me/en/posts/2025/08/arch-linux-introduction/</loc>
+    <lastmod>2025-08-11T23:18:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2025/08/arch-linux-introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rosa-thomas.me/en/posts/2025/08/arch-linux-introduction/"
+                />
+  </url><url>
+    <loc>https://rosa-thomas.me/en/tags/essay/</loc>
+    <lastmod>2025-07-09T16:59:00+08:00</lastmod>
+  </url><url>
     <loc>https://rosa-thomas.me/en/posts/2025/07/reflections-on-public-relations-studies/</loc>
     <lastmod>2025-07-09T16:59:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/2025/07/reflections-on-public-relations-studies/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2025/07/reflections-on-public-relations-studies/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -61,8 +103,8 @@
     <lastmod>2025-07-03T06:55:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/2025/07/reflections-on-jiang-duoduo/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2025/07/reflections-on-jiang-duoduo/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -77,8 +119,8 @@
     <lastmod>2025-07-02T21:02:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/2025/07/reflections-on-multiplication/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2025/07/reflections-on-multiplication/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -90,8 +132,8 @@
     <lastmod>2025-07-02T17:45:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/2025/07/reflections-on-essays/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2025/07/reflections-on-essays/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -106,8 +148,8 @@
     <lastmod>2025-04-03T02:50:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/2025/04/my-go-rules/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2025/04/my-go-rules/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -122,8 +164,8 @@
     <lastmod>2025-01-20T17:57:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/2025/01/hunghsi-wu-01-preface/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2025/01/hunghsi-wu-01-preface/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -135,8 +177,8 @@
     <lastmod>2024-12-15T18:38:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/2024/12/criticism-of-mathematics-education/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2024/12/criticism-of-mathematics-education/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -148,8 +190,8 @@
     <lastmod>2024-04-03T23:46:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/posts/2024/04/the-boy-and-the-heron/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2024/04/the-boy-and-the-heron/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -157,11 +199,37 @@
                 href="https://rosa-thomas.me/en/posts/2024/04/the-boy-and-the-heron/"
                 />
   </url><url>
+    <loc>https://rosa-thomas.me/en/posts/2024/01/katago-installation/</loc>
+    <lastmod>2024-01-16T18:02:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2024/01/katago-installation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rosa-thomas.me/en/posts/2024/01/katago-installation/"
+                />
+  </url><url>
+    <loc>https://rosa-thomas.me/en/posts/2023/01/arch-linux-installation/</loc>
+    <lastmod>2023-01-19T23:38:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/posts/2023/01/arch-linux-installation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://rosa-thomas.me/en/posts/2023/01/arch-linux-installation/"
+                />
+  </url><url>
     <loc>https://rosa-thomas.me/en/about/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/about/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -172,8 +240,8 @@
     <loc>https://rosa-thomas.me/en/archives/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/archives/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/archives/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -184,8 +252,8 @@
     <loc>https://rosa-thomas.me/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/categories/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -196,8 +264,8 @@
     <loc>https://rosa-thomas.me/en/search/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://rosa-thomas.me/zh-cn/search/"
+                hreflang="zh"
+                href="https://rosa-thomas.me/zh/search/"
                 />
     <xhtml:link
                 rel="alternate"

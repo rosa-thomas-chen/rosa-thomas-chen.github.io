@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>水无常形——开源围棋 AI 软件 KataGo 安装指南 | Rosa Thomas 的博客</title>
+<meta name="keywords" content="围棋, 自由软件">
+<meta name="description" content="1 简介
+KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。
+David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多在 DeepMind 论文之后的相关研究及原创的研究，大幅改善了训练速度，使 KataGo 成为目前世界上最强的电脑围棋软件之一。">
+<meta name="author" content="我">
+<link rel="canonical" href="https://rosa-thomas.me/zh/posts/2024/01/katago-installation/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="apple-touch-icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="mask-icon" href="https://rosa-thomas.me/images/cherry.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/posts/2024/01/katago-installation/">
+<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/posts/2024/01/katago-installation/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://rosa-thomas.me/zh/posts/2024/01/katago-installation/">
+  <meta property="og:site_name" content="Rosa Thomas 的博客">
+  <meta property="og:title" content="水无常形——开源围棋 AI 软件 KataGo 安装指南">
+  <meta property="og:description" content="1 简介 KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。
+David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多在 DeepMind 论文之后的相关研究及原创的研究，大幅改善了训练速度，使 KataGo 成为目前世界上最强的电脑围棋软件之一。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-01-16T18:02:00+08:00">
+    <meta property="article:modified_time" content="2024-01-16T18:02:00+08:00">
+    <meta property="article:tag" content="围棋">
+    <meta property="article:tag" content="自由软件">
+      <meta property="og:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:title" content="水无常形——开源围棋 AI 软件 KataGo 安装指南">
+<meta name="twitter:description" content="1 简介
+KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。
+David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多在 DeepMind 论文之后的相关研究及原创的研究，大幅改善了训练速度，使 KataGo 成为目前世界上最强的电脑围棋软件之一。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://rosa-thomas.me/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "水无常形——开源围棋 AI 软件 KataGo 安装指南",
+      "item": "https://rosa-thomas.me/zh/posts/2024/01/katago-installation/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "水无常形——开源围棋 AI 软件 KataGo 安装指南",
+  "name": "水无常形——开源围棋 AI 软件 KataGo 安装指南",
+  "description": "1 简介 KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。\nDavid J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多在 DeepMind 论文之后的相关研究及原创的研究，大幅改善了训练速度，使 KataGo 成为目前世界上最强的电脑围棋软件之一。\n",
+  "keywords": [
+    "围棋", "自由软件"
+  ],
+  "articleBody": "1 简介 KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。\nDavid J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多在 DeepMind 论文之后的相关研究及原创的研究，大幅改善了训练速度，使 KataGo 成为目前世界上最强的电脑围棋软件之一。\n“KataGo”这个名字来源于日语单词“かた”（罗马音：kata，中文：类型）。即使在英语中，武道的形式也被称为“kata”。作者 lightvector 表示，它作为一个通过强化学习永久训练自己并旨在完成自己的形式的人工智能的名称似乎是合理的1。\n1.1 特色功能 相比 AlphaGo，KataGo 的优势在于：\n能够估算目数差，并评估每个交叉点的归属权，而不仅仅是显示胜率。这个功能可以极大地帮助爱好者了解每手棋的作用。 能够最大化领先优势，在落后时下出胜负手，在领先时减少退让。 支持自定义贴目和让子棋。 支持从 7x7 到 19x19 的棋盘尺寸。最大可以支持 29x29 的棋盘（需要使用 bs29 版本）。 支持多种规则，包括中国规则、日韩规则和中国古代规则等。 支持多种行棋风格，包括人类各水平等级的棋风，以及历史上各个时期的棋风（需要相应的配置）。 KataGo 是开源软件，您可以自由地获取、使用、改编和分发该软件，也可以参与神经网络的训练。 2 使用方法综述 2.1 与图形用户界面搭配使用 对大多数围棋爱好者而言，使用 KataGo 并不是一件容易的事。这是因为 KataGo 没有图形界面，只能在命令窗口中运行，用户向 KataGo 输入文字命令，KataGo 也以文字的形式输出分析结果。普通用户难以掌握 KataGo 的命令，也难以通过一行行文字输出理解 KataGo 传达的意思，因此我们需要另一个程序作为中介，将用户的棋谱转化成命令，将 KataGo 的输出转化成可视化棋盘。这个程序被称为“图形用户界面”。\n简单地说，KataGo + 图形用户界面 = 可视化围棋分析工具。笔者推荐的围棋图形用户界面有：\nSabaki， Lizzie， Ogatak。 您可以任选一种与 KataGo 搭配使用。\n2.2 使用 KaTrain 您可能会问：用两个程序完成一件事情是不是太复杂了，有没有用一个程序就能完成的方法呢？KaTrain 就是一个 All in One 的工具。它具有 AI 复盘、人机对弈等功能，支持 AI 行棋风格的调整。\n对于普通围棋爱好者而言，KaTrain 的功能已经足够使用；对于计算机操作水平较高的围棋爱好者和研究者而言，可以使用“KataGo + 图形用户界面”的方案。本文将以 Windows 系统为例，分别介绍两种使用方法。\n2.3 KataGo 的后端版本 KataGo 有四个后端可供选择：OpenCL (GPU)、CUDA (GPU)、TensorRT (GPU) 和 Eigen (CPU)。\n官方网站2上给出的选择建议是：\n如果你有性能良好的GPU，要快速让程序运行起来，可以尝试使用 OpenCL。\n对于 NVIDIA GPU，TensorRT 通常能提供更优异的性能，但你可能需要从 NVIDIA 官网安装 TensorRT。\n如果你没有 GPU，或者你的 GPU 过于老旧/性能不足以支持 OpenCL，且你只想使用纯 CPU 版的 KataGo，可以使用带 AVX2 的 Eigen。\n如果你的 CPU 较旧或设备为低端且不支持 AVX2，请使用不带 AVX2 的 Eigen。\nCUDA 后端可在安装了 CUDA+CUDNN 的 NVIDIA GPU 上运行，但性能可能不如 TensorRT。\n总之，笔者建议\n大多数用户使用 OpenCL 后端； 拥有 NVIDIA 高端显卡（20 系列及以上）的用户使用 TensorRT 后端； 以上二者均无法运行的用户，依次尝试带 AVX2 的 Eigen 和不带 AVX2 的 Eigen。 本文以 OpenCL 为例介绍使用方法。\n3 安装显卡驱动 KataGo 的运行需要显卡的支持。如果没有安装最新版本的显卡驱动，可能导致 KataGo 出现错误。\n请先确认您的显卡品牌和型号，方法如下。\nhttps://zh.wikihow.com/%E6%9F%A5%E7%9C%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%98%BE%E5%8D%A1%E5%9E%8B%E5%8F%B7\n如果您使用 NVIDIA 或 AMD 显卡，请打开驱动程序下载页面，选择您的产品型号和操作系统，下载并安装相应的驱动程序。其他品牌显卡的驱动程序也请前往官方网站下载。\nhttps://www.nvidia.cn/geforce/drivers/\nhttps://www.amd.com/zh-hans/support\n如果您选择 KataGo 的 TensorRT 后端，还需要前往官方网站安装 CUDA 和 TensorRT。选择 OpenCL 后端的读者无需安装。\nhttps://developer.nvidia.com/cuda-downloads\nhttps://developer.nvidia.com/tensorrt\n下载 TensorRT 之前需要注册并填写问卷，较为复杂。笔者没有尝试过，因而无法提供直接支持。这里只提供一些安装教程。\nNVIDIA Deep Learning TensorRT Documentation​ docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html\nTensorRT安装及使用教程-CSDN博客​ blog.csdn.net/zong596568821xp/article/details/86077553\n现在，让我们开始正式安装 KataGo 吧。\n4 KaTrain KaTrain 是一个 All in One 的围棋复盘和对弈工具，可能是使用 KataGo 的最简单的方式。\nKaTrain 的特色功能有\n复盘您的对局并找到目数损失最大的几手。 与 AI 对弈时，您能立即得到反馈。当您有失误时，可以得到悔棋机会。 与弱化的、具有不同风格的 AI 对弈。 自动生成带有 AI 复盘的 SGF 文件。 您可以前往 KaTrain 官方网站及源代码库获取使用帮助。\nhttps://github.com/sanderland/katrain\n4.1 安装 KaTrain 的安装相对容易。请前往 KaTrain 的 GitHub 页面，下载最新的 KaTrain.zip 文件，然后将其解压缩（不是双击打开，而是右键压缩包，点击解压缩）即可。\nhttps://github.com/sanderland/katrain/releases/latest\n截至本文最后一次更新，最新版本是 1.14.0，下载链接是\nhttps://github.com/sanderland/katrain/releases/download/v1.14.0/KaTrain.zip\nGitHub 在国内访问不够稳定，笔者会将文件上传到国内网盘，以便读者使用。\n发布信息 发布时间 本文初次发布于：2024 年 1 月 16 日，最后修改于：2025 年 8 月 13 日。\n文章链接：\nRosa Thomas 的博客 知乎 许可协议 本作品采用 CC BY-SA 4.0 进行许可。\nhttps://github.com/lightvector/KataGo/issues/311 ↩︎\nhttps://github.com/lightvector/KataGo#opencl-vs-cuda-vs-tensorrt-vs-eigen ↩︎\n",
+  "wordCount" : "1957",
+  "inLanguage": "zh",
+  "image": "https://rosa-thomas.me/images/cherry.png","datePublished": "2024-01-16T18:02:00+08:00",
+  "dateModified": "2024-01-16T18:02:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "我"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rosa-thomas.me/zh/posts/2024/01/katago-installation/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Rosa Thomas 的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rosa-thomas.me/images/cherry.png"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosa-thomas.me/zh/" accesskey="h" title="Rosa Thomas 的博客 (Alt + H)">
+                <img src="https://rosa-thomas.me/images/cherry.png" alt="" aria-label="logo"
+                    height="25">Rosa Thomas 的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://rosa-thomas.me/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosa-thomas.me/zh/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/zh/tags/" title="Tags">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/zh/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/zh/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://rosa-thomas.me/zh/">主页</a>&nbsp;»&nbsp;<a href="https://rosa-thomas.me/zh/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      水无常形——开源围棋 AI 软件 KataGo 安装指南
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2024-01-16 18:02:00 +0800 CST'>2024-01-16</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1957 字</span>&nbsp;·&nbsp;<span>我</span>&nbsp;|&nbsp;<span>语言:</span>
+<ul class="i18n_list">
+    <li>
+        <a href="https://rosa-thomas.me/en/posts/2024/01/katago-installation/">En</a>
+    </li>
+</ul>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-简介">1 简介</a>
+      <ul>
+        <li><a href="#11-特色功能">1.1 特色功能</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-使用方法综述">2 使用方法综述</a>
+      <ul>
+        <li><a href="#21-与图形用户界面搭配使用">2.1 与图形用户界面搭配使用</a></li>
+        <li><a href="#22-使用-katrain">2.2 使用 KaTrain</a></li>
+        <li><a href="#23-katago-的后端版本">2.3 KataGo 的后端版本</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-安装显卡驱动">3 安装显卡驱动</a></li>
+    <li><a href="#4-katrain">4 KaTrain</a>
+      <ul>
+        <li><a href="#41-安装">4.1 安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#发布信息">发布信息</a>
+      <ul>
+        <li><a href="#发布时间">发布时间</a></li>
+        <li><a href="#许可协议">许可协议</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="1-简介">1 简介<a hidden class="anchor" aria-hidden="true" href="#1-简介">#</a></h2>
+<p>KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。</p>
+<p>David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多在 DeepMind 论文之后的相关研究及原创的研究，大幅改善了训练速度，使 KataGo 成为目前世界上最强的电脑围棋软件之一。</p>
+<p>“KataGo”这个名字来源于日语单词“かた”（罗马音：kata，中文：类型）。即使在英语中，武道的形式也被称为“kata”。作者 lightvector 表示，它作为一个通过强化学习永久训练自己并旨在完成自己的形式的人工智能的名称似乎是合理的<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
+<h3 id="11-特色功能">1.1 特色功能<a hidden class="anchor" aria-hidden="true" href="#11-特色功能">#</a></h3>
+<p>相比 AlphaGo，KataGo 的优势在于：</p>
+<ol>
+<li>能够估算<strong>目数差</strong>，并评估每个交叉点的<strong>归属权</strong>，而不仅仅是显示胜率。这个功能可以极大地帮助爱好者了解每手棋的作用。</li>
+<li>能够<strong>最大化</strong>领先优势，在落后时下出胜负手，在领先时减少退让。</li>
+<li>支持<strong>自定义贴目</strong>和<strong>让子棋</strong>。</li>
+<li>支持从 7x7 到 19x19 的<strong>棋盘尺寸</strong>。最大可以支持 29x29 的棋盘（需要使用 bs29 版本）。</li>
+<li>支持多种<strong>规则</strong>，包括中国规则、日韩规则和中国古代规则等。</li>
+<li>支持多种<strong>行棋风格</strong>，包括人类各水平等级的棋风，以及历史上各个时期的棋风（需要相应的配置）。</li>
+<li>KataGo 是<strong>开源软件</strong>，您可以自由地获取、使用、改编和分发该软件，也可以参与神经网络的训练。</li>
+</ol>
+<h2 id="2-使用方法综述">2 使用方法综述<a hidden class="anchor" aria-hidden="true" href="#2-使用方法综述">#</a></h2>
+<h3 id="21-与图形用户界面搭配使用">2.1 与图形用户界面搭配使用<a hidden class="anchor" aria-hidden="true" href="#21-与图形用户界面搭配使用">#</a></h3>
+<p>对大多数围棋爱好者而言，使用 KataGo 并不是一件容易的事。这是因为 KataGo 没有图形界面，只能在命令窗口中运行，用户向 KataGo 输入文字命令，KataGo 也以文字的形式输出分析结果。普通用户难以掌握 KataGo 的命令，也难以通过一行行文字输出理解 KataGo 传达的意思，因此我们需要另一个程序作为中介，将用户的棋谱转化成命令，将 KataGo 的输出转化成可视化棋盘。这个程序被称为“<strong>图形用户界面</strong>”。</p>
+<p>简单地说，<strong>KataGo + 图形用户界面 = 可视化围棋分析工具</strong>。笔者推荐的围棋图形用户界面有：</p>
+<ul>
+<li>Sabaki，</li>
+<li>Lizzie，</li>
+<li>Ogatak。</li>
+</ul>
+<p>您可以任选一种与 KataGo 搭配使用。</p>
+<h3 id="22-使用-katrain">2.2 使用 KaTrain<a hidden class="anchor" aria-hidden="true" href="#22-使用-katrain">#</a></h3>
+<p>您可能会问：用两个程序完成一件事情是不是太复杂了，有没有用一个程序就能完成的方法呢？<strong>KaTrain</strong> 就是一个 All in One 的工具。它具有 AI 复盘、人机对弈等功能，支持 AI 行棋风格的调整。</p>
+<p>对于普通围棋爱好者而言，KaTrain 的功能已经足够使用；对于计算机操作水平较高的围棋爱好者和研究者而言，可以使用“KataGo + 图形用户界面”的方案。本文将以 Windows 系统为例，分别介绍两种使用方法。</p>
+<h3 id="23-katago-的后端版本">2.3 KataGo 的后端版本<a hidden class="anchor" aria-hidden="true" href="#23-katago-的后端版本">#</a></h3>
+<p>KataGo 有四个后端可供选择：OpenCL (GPU)、CUDA (GPU)、TensorRT (GPU) 和 Eigen (CPU)。</p>
+<p>官方网站<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>上给出的选择建议是：</p>
+<blockquote>
+<p>如果你有性能良好的GPU，要快速让程序运行起来，可以尝试使用 OpenCL。</p>
+<p>对于 NVIDIA GPU，TensorRT 通常能提供更优异的性能，但你可能需要从 NVIDIA 官网安装 TensorRT。</p>
+<p>如果你没有 GPU，或者你的 GPU 过于老旧/性能不足以支持 OpenCL，且你只想使用纯 CPU 版的 KataGo，可以使用带 AVX2 的 Eigen。</p>
+<p>如果你的 CPU 较旧或设备为低端且不支持 AVX2，请使用不带 AVX2 的 Eigen。</p>
+<p>CUDA 后端可在安装了 CUDA+CUDNN 的 NVIDIA GPU 上运行，但性能可能不如 TensorRT。</p></blockquote>
+<p>总之，笔者建议</p>
+<ol>
+<li>大多数用户使用 OpenCL 后端；</li>
+<li>拥有 NVIDIA 高端显卡（20 系列及以上）的用户使用 TensorRT 后端；</li>
+<li>以上二者均无法运行的用户，依次尝试带 AVX2 的 Eigen 和不带 AVX2 的 Eigen。</li>
+</ol>
+<p>本文以 OpenCL 为例介绍使用方法。</p>
+<h2 id="3-安装显卡驱动">3 安装显卡驱动<a hidden class="anchor" aria-hidden="true" href="#3-安装显卡驱动">#</a></h2>
+<p>KataGo 的运行需要显卡的支持。如果没有安装最新版本的显卡驱动，可能导致 KataGo 出现错误。</p>
+<p>请先确认您的显卡品牌和型号，方法如下。</p>
+<p><a href="https://zh.wikihow.com/%E6%9F%A5%E7%9C%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%98%BE%E5%8D%A1%E5%9E%8B%E5%8F%B7">https://zh.wikihow.com/%E6%9F%A5%E7%9C%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%98%BE%E5%8D%A1%E5%9E%8B%E5%8F%B7</a></p>
+<p>如果您使用 NVIDIA 或 AMD 显卡，请打开驱动程序下载页面，选择您的产品型号和操作系统，下载并安装相应的驱动程序。其他品牌显卡的驱动程序也请前往官方网站下载。</p>
+<p><a href="https://www.nvidia.cn/geforce/drivers/">https://www.nvidia.cn/geforce/drivers/</a></p>
+<p><a href="https://www.amd.com/zh-hans/support">https://www.amd.com/zh-hans/support</a></p>
+<p>如果您选择 KataGo 的 TensorRT 后端，还需要前往官方网站安装 CUDA 和 TensorRT。选择 OpenCL 后端的读者无需安装。</p>
+<p><a href="https://developer.nvidia.com/cuda-downloads">https://developer.nvidia.com/cuda-downloads</a></p>
+<p><a href="https://developer.nvidia.com/tensorrt">https://developer.nvidia.com/tensorrt</a></p>
+<p>下载 TensorRT 之前需要注册并填写问卷，较为复杂。笔者没有尝试过，因而无法提供直接支持。这里只提供一些安装教程。</p>
+<p>NVIDIA Deep Learning TensorRT Documentation​
+docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html</p>
+<p>TensorRT安装及使用教程-CSDN博客​
+blog.csdn.net/zong596568821xp/article/details/86077553</p>
+<p>现在，让我们开始正式安装 KataGo 吧。</p>
+<h2 id="4-katrain">4 KaTrain<a hidden class="anchor" aria-hidden="true" href="#4-katrain">#</a></h2>
+<p>KaTrain 是一个 All in One 的围棋复盘和对弈工具，可能是使用 KataGo 的最简单的方式。</p>
+<p>KaTrain 的特色功能有</p>
+<ol>
+<li>复盘您的对局并找到目数损失最大的几手。</li>
+<li>与 AI 对弈时，您能立即得到反馈。当您有失误时，可以得到悔棋机会。</li>
+<li>与弱化的、具有不同风格的 AI 对弈。</li>
+<li>自动生成带有 AI 复盘的 SGF 文件。</li>
+</ol>
+<p>您可以前往 KaTrain 官方网站及源代码库获取使用帮助。</p>
+<p><a href="https://github.com/sanderland/katrain">https://github.com/sanderland/katrain</a></p>
+<h3 id="41-安装">4.1 安装<a hidden class="anchor" aria-hidden="true" href="#41-安装">#</a></h3>
+<p>KaTrain 的安装相对容易。请前往 KaTrain 的 GitHub 页面，下载最新的 KaTrain.zip 文件，然后将其解压缩（不是双击打开，而是右键压缩包，点击解压缩）即可。</p>
+<p><a href="https://github.com/sanderland/katrain/releases/latest">https://github.com/sanderland/katrain/releases/latest</a></p>
+<p>截至本文最后一次更新，最新版本是 1.14.0，下载链接是</p>
+<p><a href="https://github.com/sanderland/katrain/releases/download/v1.14.0/KaTrain.zip">https://github.com/sanderland/katrain/releases/download/v1.14.0/KaTrain.zip</a></p>
+<p>GitHub 在国内访问不够稳定，笔者会将文件上传到国内网盘，以便读者使用。</p>
+<h2 id="发布信息">发布信息<a hidden class="anchor" aria-hidden="true" href="#发布信息">#</a></h2>
+<h3 id="发布时间">发布时间<a hidden class="anchor" aria-hidden="true" href="#发布时间">#</a></h3>
+<p>本文初次发布于：2024 年 1 月 16 日，最后修改于：2025 年 8 月 13 日。</p>
+<p>文章链接：</p>
+<ol>
+<li><a href="https://rosa-thomas.me/posts/2024/01/katago-installation/">Rosa Thomas 的博客</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/678161076">知乎</a></li>
+</ol>
+<h3 id="许可协议">许可协议<a hidden class="anchor" aria-hidden="true" href="#许可协议">#</a></h3>
+<p>本作品采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans">CC BY-SA 4.0</a> 进行许可。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://github.com/lightvector/KataGo/issues/311">https://github.com/lightvector/KataGo/issues/311</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://github.com/lightvector/KataGo#opencl-vs-cuda-vs-tensorrt-vs-eigen">https://github.com/lightvector/KataGo#opencl-vs-cuda-vs-tensorrt-vs-eigen</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://rosa-thomas.me/zh/tags/%E5%9B%B4%E6%A3%8B/">围棋</a></li>
+      <li><a href="https://rosa-thomas.me/zh/tags/%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6/">自由软件</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://rosa-thomas.me/zh/posts/2024/04/the-boy-and-the-heron/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>一起建造属于大家的白色巨塔——电影《你想活出怎样的人生》观后感</span>
+  </a>
+  <a class="next" href="https://rosa-thomas.me/zh/posts/2023/01/arch-linux-installation/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>一份写给新手的 Arch Linux 安装教程（2025.11）</span>
+  </a>
+</nav>
+
+  </footer>
+<script
+    src="https://giscus.app/client.js"
+    data-repo="rosa-thomas-chen/rosa-thomas-chen.github.io"
+    data-repo-id="R_kgDOPcLOEw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOPcLOE84CuFAC"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://rosa-thomas.me/zh/">Rosa Thomas 的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.147.7"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Rosa Thomas 的博客</title>
+<meta name="keywords" content="博客, 数学, 自由软件, 开源软件, Linux, 围棋">
+<meta name="description" content="一个关于数学、自由软件和围棋的个人博客">
+<meta name="author" content="我">
+<link rel="canonical" href="https://rosa-thomas.me/zh/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="apple-touch-icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="mask-icon" href="https://rosa-thomas.me/images/cherry.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://rosa-thomas.me/zh/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="https://rosa-thomas.me/zh/index.json" title="json">
+<link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/">
+<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://rosa-thomas.me/zh/">
+  <meta property="og:site_name" content="Rosa Thomas 的博客">
+  <meta property="og:title" content="Rosa Thomas 的博客">
+  <meta property="og:description" content="一个关于数学、自由软件和围棋的个人博客">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:title" content="Rosa Thomas 的博客">
+<meta name="twitter:description" content="一个关于数学、自由软件和围棋的个人博客">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rosa Thomas 的博客",
+  "url": "https://rosa-thomas.me/zh/",
+  "description": "一个关于数学、自由软件和围棋的个人博客",
+  "logo": "https://rosa-thomas.me/images/cherry.png",
+  "sameAs": [
+      "https://github.com/rosa-thomas-chen", "https://www.zhihu.com/people/48-23-76-52", "https://space.bilibili.com/285286510"
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosa-thomas.me/zh/" accesskey="h" title="Rosa Thomas 的博客 (Alt + H)">
+                <img src="https://rosa-thomas.me/images/cherry.png" alt="" aria-label="logo"
+                    height="25">Rosa Thomas 的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://rosa-thomas.me/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosa-thomas.me/zh/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/zh/tags/" title="Tags">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/zh/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/zh/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>来即是客</h1>
+    </header>
+    <div class="entry-content">
+        欢迎访问我的博客！我是一名数学、自由软件和围棋的爱好者。您可以在这里阅读我的笔记和随笔，并通过评论与我交流。您还可以通过以下方式联系我~
+    </div>
+    <footer class="entry-footer">
+        <div class="social-icons" >
+    <a href="https://github.com/rosa-thomas-chen" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://www.zhihu.com/people/48-23-76-52" target="_blank" rel="noopener noreferrer me"
+        title="Zhihu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="m13.3334,3.60098l0,17.1471l1.79582,0l0.75424,2.13703l3.18459,-2.13703l3.93584,0l0,-17.1471l-9.6705,0zm7.41375,14.87538l-1.79283,0l-2.24777,1.50849l-0.53276,-1.50849l-0.53875,0l0,-12.53483l5.10911,0l0,12.53483l0.00299,0zm-8.56906,-7.18927l-3.97475,0c0.06285,-1.34387 0.1287,-3.12174 0.19754,-5.17496l3.91788,0l-0.00299,-0.24244c0,-0.01796 -0.00599,-0.43998 -0.06884,-0.87097c-0.06285,-0.44896 -0.19754,-1.04457 -0.62854,-1.04457l-6.5727,0c0.13169,-0.61657 0.46991,-2.08615 0.87995,-2.80747l0.19155,-0.33522l-0.3861,-0.02095c-0.02394,0 -0.58663,-0.02694 -1.23912,0.31726c-1.06851,0.56868 -1.5474,1.68807 -1.75691,2.52612c-0.55072,2.18791 -1.33489,3.70837 -1.66712,4.35786c-0.09877,0.19155 -0.15863,0.30529 -0.18557,0.38311c-0.05387,0.14666 -0.02394,0.29332 0.0838,0.38909c0.31427,0.28434 1.14334,-0.0868 1.15232,-0.08979c0.01796,-0.00898 0.03891,-0.01796 0.06585,-0.02993c0.41603,-0.18856 1.64916,-0.74826 2.08914,-2.52911l1.69705,0c0.02095,0.96376 0.09278,4.14236 0.0868,5.17496l-4.22018,0l-0.06285,0.0449c-0.69139,0.50582 -0.91288,1.8916 -0.92185,1.95146l-0.0419,0.27536l4.99837,0c-0.36814,2.34355 -0.79315,3.3941 -1.01763,3.81313c-0.11074,0.20951 -0.21849,0.41902 -0.32025,0.62255c-0.63752,1.26306 -1.29898,2.56802 -3.7802,4.5973c-0.10775,0.0838 -0.20951,0.23944 -0.14367,0.41005c0.07183,0.18856 0.27835,0.27237 0.73629,0.27237c0.16162,0 0.35318,-0.00898 0.58065,-0.02993c1.49352,-0.13169 3.01698,-0.53875 4.04359,-2.6219c0.50882,-1.05056 0.94879,-2.14601 1.31394,-3.25941l4.08549,4.78886l0.14965,-0.35916c0.02394,-0.05687 0.56868,-1.38578 0.15264,-2.87032l-0.01497,-0.05387l-3.23547,-3.68143l-0.65847,0.49684c0.19155,-0.78118 0.31726,-1.49352 0.37413,-2.12805l4.74995,0l0,-0.23944c0,-1.20021 -0.55371,-1.91255 -0.57466,-1.94248l-0.07183,-0.08979z" />
+</svg>
+    </a>
+    <a href="https://space.bilibili.com/285286510" target="_blank" rel="noopener noreferrer me"
+        title="Bilibili">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round">
+    <rect x="1.3333" y="6" width="21.333" height="15.333" rx="4" ry="4" />
+    <path d="m8 12.4v1.2" />
+    <path d="m16 12.4v1.2" />
+    <path d="m5.8853 2.6667 2.6667 2.6667" />
+    <path d="m18.115 2.6667-2.6667 2.6667" />
+</svg>
+    </a>
+</div>
+
+    </footer>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">安装 Arch Linux 之前需要知道的事情
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前言 欢迎您来到 Arch Linux 的世界。Arch Linux 属于 Linux 操作系统家族，操作系统是沟通应用程序和计算机硬件的桥梁，也就是说，您可以将其安装到计算机中，让它为您驱动硬件，以便在其上运行应用程序。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-11 23:18:21 +0800 CST'>2025-08-11</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1657 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 安装 Arch Linux 之前需要知道的事情" href="https://rosa-thomas.me/zh/posts/2025/08/arch-linux-introduction/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我对公共关系学的思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 资本和权力都认为，舆情和争议是不好的东西，需要被平息。在媒体的宣传之下，我们已经默认，舆情和争议都是贬义词了。
+可以认为舆情和争议会带来一定程度的冲突，影响社会稳定。然而当我们放下成见，回归词语的本意，就会产生不一样的思考。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-09 16:59:00 +0800 CST'>2025-07-09</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>651 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 我对公共关系学的思考" href="https://rosa-thomas.me/zh/posts/2025/07/reflections-on-public-relations-studies/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我对蒋多多的思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 我对蒋多多，唯有敬佩。
+就算赌上自己的前途，也要说出真心想说的话。这需要莫大的勇气和真诚。她做到了一切，成为舆论焦点，然后归隐乡村，肩负起了原本就属于她的平凡命运。她至今为止的人生，平凡而绚丽，渺小而伟大。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-03 06:55:00 +0800 CST'>2025-07-03</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>813 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 我对蒋多多的思考" href="https://rosa-thomas.me/zh/posts/2025/07/reflections-on-jiang-duoduo/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我对一个乘法问题的思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 课本编写和实际学习之间存在一些矛盾，其中之一便是：
+数学课本上，同样的知识只能写一遍；但是实际学习中，应该在合适的时机重温学过的知识，以加深理解。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-02 21:02:00 +0800 CST'>2025-07-02</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>986 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 我对一个乘法问题的思考" href="https://rosa-thomas.me/zh/posts/2025/07/reflections-on-multiplication/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我对随笔的思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 偶然翻出自己初、高中时的周记本。成长过程中的内心往事重新回到脑海……
+一方面，我惊讶于当年自己的思考之敏捷和语言之精妙，不禁感谢语文老师培养的写随笔的习惯。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-02 17:45:00 +0800 CST'>2025-07-02</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>425 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 我对随笔的思考" href="https://rosa-thomas.me/zh/posts/2025/07/reflections-on-essays/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我心目中理想的围棋规则
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前言 笔者以新西兰规则、智运会规则为灵感来源，编辑了一份心目中理想的围棋规则，供您参考。
+正文 19 x 19 网格是由 19 条水平线段和 19 条竖直线段组成的网格，包括 361 个交叉点。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-03 02:50:00 +0800 CST'>2025-04-03</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>1425 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 我心目中理想的围棋规则" href="https://rosa-thomas.me/zh/posts/2025/04/my-go-rules/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">伍鸿熙《数学家讲解小学数学》读书笔记（1）——前言和致读者
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1 前言 1.1 主要内容 本书的主要内容是：小学数学中的数和运算．
+1.2 读者对象 本书的读者对象是：小学数学教师．
+1.3 特点 简洁：因为成人的注意力时间更长，并且熟练程度更高； 合乎逻辑； （小心地、循序渐进地）利用符号语言； 讨论一些初中课题：数学教师所知道的知识应该超过他所教课程的水平． 1.4 数学家如何理解数学 理解一个概念，意味着理解它的： 准确定义， 直观内容， 为何需要它， 在什么情况下发挥作用； 理解一个技巧（或定理），意味着理解它的： 操作方法， 使用条件， 证明方法， 发现动机， 灵活运用． 1.5 本书的连贯性 本书全面、系统地展示了自然数、分数和有理数的数学发展过程，不违背学习规律，符合逻辑．
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-20 17:57:00 +0800 CST'>2025-01-20</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1725 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 伍鸿熙《数学家讲解小学数学》读书笔记（1）——前言和致读者" href="https://rosa-thomas.me/zh/posts/2025/01/hunghsi-wu-01-preface/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">对中小学数学解题套路的批判
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 学习中小学数学，有一种捷径是记下各种题型对应的解题套路，解题时抓住题目特点对号入座。
+这种方法固然对解题极有帮助，却让学习数学成为背诵，增大了记忆负担。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-15 18:38:00 +0800 CST'>2024-12-15</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>770 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 对中小学数学解题套路的批判" href="https://rosa-thomas.me/zh/posts/2024/12/criticism-of-mathematics-education/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">一起建造属于大家的白色巨塔——电影《你想活出怎样的人生》观后感
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正文 我们热爱宫崎骏的电影，究竟是为了什么呢？我个人曾痴迷于剧情和设定，后来钻研主旨和隐喻，现在发现细腻的情感才是最引人入胜之处。
+《千与千寻》在这些方面，无疑是宫崎骏的巅峰之作。前半小时的紧张感与尾声处列车上的平静形成对比，让人难以忘怀。与千寻一起经历了这么多波折，一定可以勇敢地面对生活吧。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-03 23:46:00 +0800 CST'>2024-04-03</span>&nbsp;·&nbsp;<span>5 分钟</span>&nbsp;·&nbsp;<span>2037 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 一起建造属于大家的白色巨塔——电影《你想活出怎样的人生》观后感" href="https://rosa-thomas.me/zh/posts/2024/04/the-boy-and-the-heron/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">水无常形——开源围棋 AI 软件 KataGo 安装指南
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1 简介 KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。
+David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多在 DeepMind 论文之后的相关研究及原创的研究，大幅改善了训练速度，使 KataGo 成为目前世界上最强的电脑围棋软件之一。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-16 18:02:00 +0800 CST'>2024-01-16</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1957 字</span>&nbsp;·&nbsp;<span>我</span></footer>
+  <a class="entry-link" aria-label="post link to 水无常形——开源围棋 AI 软件 KataGo 安装指南" href="https://rosa-thomas.me/zh/posts/2024/01/katago-installation/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://rosa-thomas.me/zh/page/2/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://rosa-thomas.me/zh/">Rosa Thomas 的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

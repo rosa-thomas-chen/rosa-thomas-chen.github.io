@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Arch Linux on Rosa Thomas 的博客</title>
+    <link>https://rosa-thomas.me/zh/tags/arch-linux/</link>
+    <description>Recent content in Arch Linux on Rosa Thomas 的博客</description>
+    <image>
+      <title>Rosa Thomas 的博客</title>
+      <url>https://rosa-thomas.me/images/cherry.png</url>
+      <link>https://rosa-thomas.me/images/cherry.png</link>
+    </image>
+    <generator>Hugo -- 0.147.7</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 11 Aug 2025 23:18:21 +0800</lastBuildDate>
+    <atom:link href="https://rosa-thomas.me/zh/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装 Arch Linux 之前需要知道的事情</title>
+      <link>https://rosa-thomas.me/zh/posts/2025/08/arch-linux-introduction/</link>
+      <pubDate>Mon, 11 Aug 2025 23:18:21 +0800</pubDate>
+      <guid>https://rosa-thomas.me/zh/posts/2025/08/arch-linux-introduction/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;欢迎您来到 Arch Linux 的世界。Arch Linux 属于 Linux 操作系统家族，操作系统是沟通应用程序和计算机硬件的桥梁，也就是说，您可以将其安装到计算机中，让它为您驱动硬件，以便在其上运行应用程序。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>一份写给新手的 Arch Linux 安装教程（2025.11）</title>
+      <link>https://rosa-thomas.me/zh/posts/2023/01/arch-linux-installation/</link>
+      <pubDate>Thu, 19 Jan 2023 23:38:00 +0800</pubDate>
+      <guid>https://rosa-thomas.me/zh/posts/2023/01/arch-linux-installation/</guid>
+      <description>&lt;h2 id=&#34;0-前言&#34;&gt;0 前言&lt;/h2&gt;
+&lt;p&gt;Arch Linux 是一个简洁而灵活的 Linux 发行版，适合有时间、有兴趣和热爱自由的用户。Arch Linux 仅提供一个简朴的安装环境，只有命令行界面，没有图形用户界面，因此用户有极大的空间以自己喜好的方式进行安装和配置。对此，虽然熟练者感到如鱼得水，但新手往往感到陌生和茫然。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

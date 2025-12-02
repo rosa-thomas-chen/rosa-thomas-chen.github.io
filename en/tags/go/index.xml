@@ -138,5 +138,36 @@
 &lt;h2 id=&#34;发布信息&#34;&gt;发布信息&lt;/h2&gt;
 &lt;p&gt;本文初次发布于：2025 年 4 月 3 日，最后修改于：2025 年 8 月 12 日。&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>水无常形——开源围棋 AI 软件 KataGo 安装指南</title>
+      <link>https://rosa-thomas.me/en/posts/2024/01/katago-installation/</link>
+      <pubDate>Tue, 16 Jan 2024 18:02:00 +0800</pubDate>
+      <guid>https://rosa-thomas.me/en/posts/2024/01/katago-installation/</guid>
+      <description>&lt;h2 id=&#34;1-简介&#34;&gt;1 简介&lt;/h2&gt;
+&lt;p&gt;KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。&lt;/p&gt;
+&lt;p&gt;David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多在 DeepMind 论文之后的相关研究及原创的研究，大幅改善了训练速度，使 KataGo 成为目前世界上最强的电脑围棋软件之一。&lt;/p&gt;
+&lt;p&gt;“KataGo”这个名字来源于日语单词“かた”（罗马音：kata，中文：类型）。即使在英语中，武道的形式也被称为“kata”。作者 lightvector 表示，它作为一个通过强化学习永久训练自己并旨在完成自己的形式的人工智能的名称似乎是合理的&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;11-特色功能&#34;&gt;1.1 特色功能&lt;/h3&gt;
+&lt;p&gt;相比 AlphaGo，KataGo 的优势在于：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;能够估算&lt;strong&gt;目数差&lt;/strong&gt;，并评估每个交叉点的&lt;strong&gt;归属权&lt;/strong&gt;，而不仅仅是显示胜率。这个功能可以极大地帮助爱好者了解每手棋的作用。&lt;/li&gt;
+&lt;li&gt;能够&lt;strong&gt;最大化&lt;/strong&gt;领先优势，在落后时下出胜负手，在领先时减少退让。&lt;/li&gt;
+&lt;li&gt;支持&lt;strong&gt;自定义贴目&lt;/strong&gt;和&lt;strong&gt;让子棋&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;支持从 7x7 到 19x19 的&lt;strong&gt;棋盘尺寸&lt;/strong&gt;。最大可以支持 29x29 的棋盘（需要使用 bs29 版本）。&lt;/li&gt;
+&lt;li&gt;支持多种&lt;strong&gt;规则&lt;/strong&gt;，包括中国规则、日韩规则和中国古代规则等。&lt;/li&gt;
+&lt;li&gt;支持多种&lt;strong&gt;行棋风格&lt;/strong&gt;，包括人类各水平等级的棋风，以及历史上各个时期的棋风（需要相应的配置）。&lt;/li&gt;
+&lt;li&gt;KataGo 是&lt;strong&gt;开源软件&lt;/strong&gt;，您可以自由地获取、使用、改编和分发该软件，也可以参与神经网络的训练。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;2-使用方法综述&#34;&gt;2 使用方法综述&lt;/h2&gt;
+&lt;h3 id=&#34;21-与图形用户界面搭配使用&#34;&gt;2.1 与图形用户界面搭配使用&lt;/h3&gt;
+&lt;p&gt;对大多数围棋爱好者而言，使用 KataGo 并不是一件容易的事。这是因为 KataGo 没有图形界面，只能在命令窗口中运行，用户向 KataGo 输入文字命令，KataGo 也以文字的形式输出分析结果。普通用户难以掌握 KataGo 的命令，也难以通过一行行文字输出理解 KataGo 传达的意思，因此我们需要另一个程序作为中介，将用户的棋谱转化成命令，将 KataGo 的输出转化成可视化棋盘。这个程序被称为“&lt;strong&gt;图形用户界面&lt;/strong&gt;”。&lt;/p&gt;
+&lt;p&gt;简单地说，&lt;strong&gt;KataGo + 图形用户界面 = 可视化围棋分析工具&lt;/strong&gt;。笔者推荐的围棋图形用户界面有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sabaki，&lt;/li&gt;
+&lt;li&gt;Lizzie，&lt;/li&gt;
+&lt;li&gt;Ogatak。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;您可以任选一种与 KataGo 搭配使用。&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

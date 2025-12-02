@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.147.7"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Rosa Thomas&#39;s blog</title>
+<meta name="keywords" content="Blog, Mathematics, Free software, Open-source software, Linux, Go">
+<meta name="description" content="A personal blog about mathematics, free software, and Go">
+<meta name="author" content="me">
+<link rel="canonical" href="https://rosa-thomas.me/en/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="apple-touch-icon" href="https://rosa-thomas.me/images/cherry.png">
+<link rel="mask-icon" href="https://rosa-thomas.me/images/cherry.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://rosa-thomas.me/en/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="https://rosa-thomas.me/en/index.json" title="json">
+<link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/">
+<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://rosa-thomas.me/en/">
+  <meta property="og:site_name" content="Rosa Thomas&#39;s blog">
+  <meta property="og:title" content="Rosa Thomas&#39;s blog">
+  <meta property="og:description" content="A personal blog about mathematics, free software, and Go">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rosa-thomas.me/images/cherry.png">
+<meta name="twitter:title" content="Rosa Thomas&#39;s blog">
+<meta name="twitter:description" content="A personal blog about mathematics, free software, and Go">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rosa Thomas's blog",
+  "url": "https://rosa-thomas.me/en/",
+  "description": "A personal blog about mathematics, free software, and Go",
+  "logo": "https://rosa-thomas.me/images/cherry.png",
+  "sameAs": [
+      "https://github.com/rosa-thomas-chen", "https://www.zhihu.com/people/48-23-76-52", "https://space.bilibili.com/285286510"
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://rosa-thomas.me/en/" accesskey="h" title="Rosa Thomas&#39;s Blog (Alt + H)">
+                <img src="https://rosa-thomas.me/images/cherry.png" alt="" aria-label="logo"
+                    height="25">Rosa Thomas&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh/" title="简体中文"
+                                aria-label="简体中文">Zh</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://rosa-thomas.me/en/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://rosa-thomas.me/en/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">一份写给新手的 Arch Linux 安装教程（2025.11）
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>0 前言 Arch Linux 是一个简洁而灵活的 Linux 发行版，适合有时间、有兴趣和热爱自由的用户。Arch Linux 仅提供一个简朴的安装环境，只有命令行界面，没有图形用户界面，因此用户有极大的空间以自己喜好的方式进行安装和配置。对此，虽然熟练者感到如鱼得水，但新手往往感到陌生和茫然。
+本文详细地介绍了在一台 x86-64 架构的计算机中安装 Arch Linux 的过程，尽可能遵循官方安装指南。本文共介绍三种安装方式，它们分别是：
+清空硬盘并安装 Arch Linux， 在虚拟机中安装 Arch Linux， 安装 Arch Linux 并和 Windows 组成双系统。 为节省篇幅，本文主要介绍第一种方式，即清空硬盘并安装 Arch Linux。后两种方式的安装过程与第一种大致相同，其不同之处将在专门文章中详细说明。
+在动手操作之前，建议您阅读笔者的文章安装 Arch Linux 之前需要知道的事情，以便对该操作系统有初步的了解。
+尽管本文力图做到准确、全面和及时更新，但不能保证没有错误、疏漏和过时之处。本文的目的不是替代官方安装指南，而是通过把文档式的语言转化成教程式的语言，以降低新手安装 Arch Linux 的难度，便于 Arch Linux 乃至自由软件在简体中文世界的传播。为了获取更加可靠的信息，笔者建议您阅读每节后的“建议阅读”小节，那里提供了资料来源。
+1 安装要求 请确保您满足以下要求。
+1.1 硬件 计算机：一台 x86-64 架构的计算机，至少 512 MiB 内存，2 GiB 硬盘空间，可连接到互联网；本文建议至少 4 GiB 内存，100 GiB 硬盘空间，以满足日常使用需求。 安装介质：一个 U 盘，至少 2 GiB 剩余空间。 1.2 数据备份 备份计算机中的重要数据（至少包括软件列表和配置、个人文件、收藏夹和书签等）； 备份安装介质（即上述 U 盘）中的全部文件。 1.3 知识和技能 了解 Linux 基础知识（最好使用过新手友好的发行版，例如 Ubuntu、Linux Mint 或 Deepin 等）； 有动手能力和意愿； 有英语读写能力，并了解获取信息和寻求帮助的途径，以便遇到问题时查阅资料或在社区提问。 💡 提示
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-19 23:38:00 +0800 CST'>19 Jan 2023</span>&nbsp;·&nbsp;<span>13 min</span>&nbsp;·&nbsp;<span>2671 words</span>&nbsp;·&nbsp;<span>me</span></footer>
+  <a class="entry-link" aria-label="post link to 一份写给新手的 Arch Linux 安装教程（2025.11）" href="https://rosa-thomas.me/en/posts/2023/01/arch-linux-installation/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://rosa-thomas.me/en/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://rosa-thomas.me/en/">Rosa Thomas&#39;s blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
