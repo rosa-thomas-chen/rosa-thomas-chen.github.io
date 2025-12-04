@@ -20,7 +20,6 @@
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://rosa-thomas.me/zh/tags/arch-linux/index.xml" title="rss">
 <link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/tags/arch-linux/">
-<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/tags/arch-linux/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,7 +71,29 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://rosa-thomas.me/zh/tags/arch-linux/">
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+
+<meta property="og:url" content="https://rosa-thomas.me/zh/tags/arch-linux/">
   <meta property="og:site_name" content="Rosa Thomas 的博客">
   <meta property="og:title" content="Arch Linux">
   <meta property="og:description" content="一个关于数学、自由软件和围棋的个人博客">
@@ -117,6 +138,10 @@
                         <li>
                             <a href="https://rosa-thomas.me/en/" title="English"
                                 aria-label="English">En</a>
+                        </li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-tw/" title="中文（臺灣）"
+                                aria-label="中文（臺灣）">Zh-Tw</a>
                         </li>
                     </ul>
             </div>

@@ -20,7 +20,6 @@ Arch Linux 是一个简洁而灵活的 Linux 发行版，适合有时间、有�
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/posts/2023/01/arch-linux-installation/">
-<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/posts/2023/01/arch-linux-installation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,7 +71,29 @@ Arch Linux 是一个简洁而灵活的 Linux 发行版，适合有时间、有�
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://rosa-thomas.me/zh/posts/2023/01/arch-linux-installation/">
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+
+<meta property="og:url" content="https://rosa-thomas.me/zh/posts/2023/01/arch-linux-installation/">
   <meta property="og:site_name" content="Rosa Thomas 的博客">
   <meta property="og:title" content="一份写给新手的 Arch Linux 安装教程（2025.11）">
   <meta property="og:description" content="0 前言 Arch Linux 是一个简洁而灵活的 Linux 发行版，适合有时间、有兴趣和热爱自由的用户。Arch Linux 仅提供一个简朴的安装环境，只有命令行界面，没有图形用户界面，因此用户有极大的空间以自己喜好的方式进行安装和配置。对此，虽然熟练者感到如鱼得水，但新手往往感到陌生和茫然。">
@@ -179,6 +200,10 @@ Arch Linux 是一个简洁而灵活的 Linux 发行版，适合有时间、有�
                             <a href="https://rosa-thomas.me/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-tw/" title="中文（臺灣）"
+                                aria-label="中文（臺灣）">Zh-Tw</a>
+                        </li>
                     </ul>
             </div>
         </div>
@@ -220,12 +245,7 @@ Arch Linux 是一个简洁而灵活的 Linux 发行版，适合有时间、有�
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2023-01-19 23:38:00 +0800 CST'>2023-01-19</span>&nbsp;·&nbsp;<span>26 分钟</span>&nbsp;·&nbsp;<span>12537 字</span>&nbsp;·&nbsp;<span>我</span>&nbsp;|&nbsp;<span>语言:</span>
-<ul class="i18n_list">
-    <li>
-        <a href="https://rosa-thomas.me/en/posts/2023/01/arch-linux-installation/">En</a>
-    </li>
-</ul>
+    <div class="post-meta"><span title='2023-01-19 23:38:00 +0800 CST'>2023-01-19</span>&nbsp;·&nbsp;<span>26 分钟</span>&nbsp;·&nbsp;<span>12537 字</span>&nbsp;·&nbsp;<span>我</span>
 
 </div>
   </header> <div class="toc">
@@ -1139,7 +1159,7 @@ Arch Linux 是一个简洁而灵活的 Linux 发行版，适合有时间、有�
     data-emit-metadata="0"
     data-input-position="bottom"
     data-theme="preferred_color_scheme"
-    data-lang="zh-CN"
+    data-lang="zh"
     data-loading="lazy"
     crossorigin="anonymous"
     async

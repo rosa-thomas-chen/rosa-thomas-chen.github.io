@@ -11,55 +11,13 @@
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Aug 2025 23:18:21 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2024 23:46:00 +0800</lastBuildDate>
     <atom:link href="https://rosa-thomas.me/en/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Arch Linux</title>
-      <link>https://rosa-thomas.me/en/tags/arch-linux/</link>
-      <pubDate>Mon, 11 Aug 2025 23:18:21 +0800</pubDate>
-      <guid>https://rosa-thomas.me/en/tags/arch-linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Free Software</title>
-      <link>https://rosa-thomas.me/en/tags/free-software/</link>
-      <pubDate>Mon, 11 Aug 2025 23:18:21 +0800</pubDate>
-      <guid>https://rosa-thomas.me/en/tags/free-software/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://rosa-thomas.me/en/tags/linux/</link>
-      <pubDate>Mon, 11 Aug 2025 23:18:21 +0800</pubDate>
-      <guid>https://rosa-thomas.me/en/tags/linux/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Essay</title>
       <link>https://rosa-thomas.me/en/tags/essay/</link>
-      <pubDate>Wed, 09 Jul 2025 16:59:00 +0800</pubDate>
+      <pubDate>Wed, 03 Apr 2024 23:46:00 +0800</pubDate>
       <guid>https://rosa-thomas.me/en/tags/essay/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mathematics</title>
-      <link>https://rosa-thomas.me/en/tags/mathematics/</link>
-      <pubDate>Wed, 02 Jul 2025 21:02:00 +0800</pubDate>
-      <guid>https://rosa-thomas.me/en/tags/mathematics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Go</title>
-      <link>https://rosa-thomas.me/en/tags/go/</link>
-      <pubDate>Thu, 03 Apr 2025 02:50:00 +0800</pubDate>
-      <guid>https://rosa-thomas.me/en/tags/go/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hung-Hsi Wu</title>
-      <link>https://rosa-thomas.me/en/tags/hung-hsi-wu/</link>
-      <pubDate>Mon, 20 Jan 2025 17:57:00 +0800</pubDate>
-      <guid>https://rosa-thomas.me/en/tags/hung-hsi-wu/</guid>
       <description></description>
     </item>
   </channel>

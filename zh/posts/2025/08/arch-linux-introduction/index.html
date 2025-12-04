@@ -20,7 +20,6 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/posts/2025/08/arch-linux-introduction/">
-<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/posts/2025/08/arch-linux-introduction/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,7 +71,29 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://rosa-thomas.me/zh/posts/2025/08/arch-linux-introduction/">
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+
+<meta property="og:url" content="https://rosa-thomas.me/zh/posts/2025/08/arch-linux-introduction/">
   <meta property="og:site_name" content="Rosa Thomas 的博客">
   <meta property="og:title" content="安装 Arch Linux 之前需要知道的事情">
   <meta property="og:description" content="前言 欢迎您来到 Arch Linux 的世界。Arch Linux 属于 Linux 操作系统家族，操作系统是沟通应用程序和计算机硬件的桥梁，也就是说，您可以将其安装到计算机中，让它为您驱动硬件，以便在其上运行应用程序。">
@@ -179,6 +200,10 @@
                             <a href="https://rosa-thomas.me/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-tw/" title="中文（臺灣）"
+                                aria-label="中文（臺灣）">Zh-Tw</a>
+                        </li>
                     </ul>
             </div>
         </div>
@@ -220,12 +245,7 @@
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2025-08-11 23:18:21 +0800 CST'>2025-08-11</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1657 字</span>&nbsp;·&nbsp;<span>我</span>&nbsp;|&nbsp;<span>语言:</span>
-<ul class="i18n_list">
-    <li>
-        <a href="https://rosa-thomas.me/en/posts/2025/08/arch-linux-introduction/">En</a>
-    </li>
-</ul>
+    <div class="post-meta"><span title='2025-08-11 23:18:21 +0800 CST'>2025-08-11</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1657 字</span>&nbsp;·&nbsp;<span>我</span>
 
 </div>
   </header> <div class="toc">
@@ -340,7 +360,7 @@
     data-emit-metadata="0"
     data-input-position="bottom"
     data-theme="preferred_color_scheme"
-    data-lang="zh-CN"
+    data-lang="zh"
     data-loading="lazy"
     crossorigin="anonymous"
     async

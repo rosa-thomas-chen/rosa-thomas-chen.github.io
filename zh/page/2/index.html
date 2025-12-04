@@ -23,6 +23,7 @@
 <link rel="alternate" type="application/json" href="https://rosa-thomas.me/zh/index.json" title="json">
 <link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/">
 <link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/">
+<link rel="alternate" hreflang="zh-tw" href="https://rosa-thomas.me/zh-tw/">
 <noscript>
     <style>
         #theme-toggle,
@@ -74,7 +75,29 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://rosa-thomas.me/zh/">
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+
+<meta property="og:url" content="https://rosa-thomas.me/zh/">
   <meta property="og:site_name" content="Rosa Thomas 的博客">
   <meta property="og:title" content="Rosa Thomas 的博客">
   <meta property="og:description" content="一个关于数学、自由软件和围棋的个人博客">
@@ -132,6 +155,10 @@
                         <li>
                             <a href="https://rosa-thomas.me/en/" title="English"
                                 aria-label="English">En</a>
+                        </li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-tw/" title="中文（臺灣）"
+                                aria-label="中文（臺灣）">Zh-Tw</a>
                         </li>
                     </ul>
             </div>

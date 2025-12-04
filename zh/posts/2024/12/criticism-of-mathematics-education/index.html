@@ -21,7 +21,6 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/posts/2024/12/criticism-of-mathematics-education/">
-<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/posts/2024/12/criticism-of-mathematics-education/">
 <noscript>
     <style>
         #theme-toggle,
@@ -73,7 +72,29 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://rosa-thomas.me/zh/posts/2024/12/criticism-of-mathematics-education/">
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+
+<meta property="og:url" content="https://rosa-thomas.me/zh/posts/2024/12/criticism-of-mathematics-education/">
   <meta property="og:site_name" content="Rosa Thomas 的博客">
   <meta property="og:title" content="对中小学数学解题套路的批判">
   <meta property="og:description" content="正文 学习中小学数学，有一种捷径是记下各种题型对应的解题套路，解题时抓住题目特点对号入座。
@@ -181,6 +202,10 @@
                             <a href="https://rosa-thomas.me/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-tw/" title="中文（臺灣）"
+                                aria-label="中文（臺灣）">Zh-Tw</a>
+                        </li>
                     </ul>
             </div>
         </div>
@@ -216,12 +241,7 @@
     <h1 class="post-title entry-hint-parent">
       对中小学数学解题套路的批判
     </h1>
-    <div class="post-meta"><span title='2024-12-15 18:38:00 +0800 CST'>2024-12-15</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>770 字</span>&nbsp;·&nbsp;<span>我</span>&nbsp;|&nbsp;<span>语言:</span>
-<ul class="i18n_list">
-    <li>
-        <a href="https://rosa-thomas.me/en/posts/2024/12/criticism-of-mathematics-education/">En</a>
-    </li>
-</ul>
+    <div class="post-meta"><span title='2024-12-15 18:38:00 +0800 CST'>2024-12-15</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>770 字</span>&nbsp;·&nbsp;<span>我</span>
 
 </div>
   </header> <div class="toc">
@@ -272,7 +292,7 @@
     <br>
     <span>伍鸿熙《数学家讲解小学数学》读书笔记（1）——前言和致读者</span>
   </a>
-  <a class="next" href="https://rosa-thomas.me/zh/posts/2024/04/the-boy-and-the-heron/">
+  <a class="next" href="https://rosa-thomas.me/zh/posts/2024/04/reflections-on-the-film-the-boy-and-the-heron/">
     <span class="title">下一页 »</span>
     <br>
     <span>一起建造属于大家的白色巨塔——电影《你想活出怎样的人生》观后感</span>
@@ -292,7 +312,7 @@
     data-emit-metadata="0"
     data-input-position="bottom"
     data-theme="preferred_color_scheme"
-    data-lang="zh-CN"
+    data-lang="zh"
     data-loading="lazy"
     crossorigin="anonymous"
     async

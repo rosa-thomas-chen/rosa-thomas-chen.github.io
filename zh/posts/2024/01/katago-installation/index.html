@@ -21,7 +21,6 @@ David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/posts/2024/01/katago-installation/">
-<link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/posts/2024/01/katago-installation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -73,7 +72,29 @@ David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://rosa-thomas.me/zh/posts/2024/01/katago-installation/">
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+
+<meta property="og:url" content="https://rosa-thomas.me/zh/posts/2024/01/katago-installation/">
   <meta property="og:site_name" content="Rosa Thomas 的博客">
   <meta property="og:title" content="水无常形——开源围棋 AI 软件 KataGo 安装指南">
   <meta property="og:description" content="1 简介 KataGo 是由 David J. Wu（GitHub：lightvector）所研究并开发的一套围棋软件。
@@ -181,6 +202,10 @@ David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多
                             <a href="https://rosa-thomas.me/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-tw/" title="中文（臺灣）"
+                                aria-label="中文（臺灣）">Zh-Tw</a>
+                        </li>
                     </ul>
             </div>
         </div>
@@ -222,12 +247,7 @@ David J. Wu 依照 DeepMind 的 AlphaGo Zero 与 AlphaZero 论文，以及许多
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2024-01-16 18:02:00 +0800 CST'>2024-01-16</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1957 字</span>&nbsp;·&nbsp;<span>我</span>&nbsp;|&nbsp;<span>语言:</span>
-<ul class="i18n_list">
-    <li>
-        <a href="https://rosa-thomas.me/en/posts/2024/01/katago-installation/">En</a>
-    </li>
-</ul>
+    <div class="post-meta"><span title='2024-01-16 18:02:00 +0800 CST'>2024-01-16</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1957 字</span>&nbsp;·&nbsp;<span>我</span>
 
 </div>
   </header> <div class="toc">
@@ -376,7 +396,7 @@ blog.csdn.net/zong596568821xp/article/details/86077553</p>
       <li><a href="https://rosa-thomas.me/zh/tags/%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6/">自由软件</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://rosa-thomas.me/zh/posts/2024/04/the-boy-and-the-heron/">
+  <a class="prev" href="https://rosa-thomas.me/zh/posts/2024/04/reflections-on-the-film-the-boy-and-the-heron/">
     <span class="title">« 上一页</span>
     <br>
     <span>一起建造属于大家的白色巨塔——电影《你想活出怎样的人生》观后感</span>
@@ -401,7 +421,7 @@ blog.csdn.net/zong596568821xp/article/details/86077553</p>
     data-emit-metadata="0"
     data-input-position="bottom"
     data-theme="preferred_color_scheme"
-    data-lang="zh-CN"
+    data-lang="zh"
     data-loading="lazy"
     crossorigin="anonymous"
     async

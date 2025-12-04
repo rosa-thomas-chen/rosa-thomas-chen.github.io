@@ -20,6 +20,7 @@
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/about/">
 <link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/about/">
+<link rel="alternate" hreflang="zh-tw" href="https://rosa-thomas.me/zh-tw/about/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,7 +72,29 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://rosa-thomas.me/zh/about/">
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+
+<meta property="og:url" content="https://rosa-thomas.me/zh/about/">
   <meta property="og:site_name" content="Rosa Thomas 的博客">
   <meta property="og:title" content="关于">
   <meta property="og:description" content="about">
@@ -165,6 +188,10 @@
                             <a href="https://rosa-thomas.me/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-tw/" title="中文（臺灣）"
+                                aria-label="中文（臺灣）">Zh-Tw</a>
+                        </li>
                     </ul>
             </div>
         </div>
@@ -205,6 +232,9 @@
     <li>
         <a href="https://rosa-thomas.me/en/about/">En</a>
     </li>
+    <li>
+        <a href="https://rosa-thomas.me/zh-tw/about/">Zh-Tw</a>
+    </li>
 </ul>
 
 </div>
@@ -232,7 +262,7 @@
     data-emit-metadata="0"
     data-input-position="bottom"
     data-theme="preferred_color_scheme"
-    data-lang="zh-CN"
+    data-lang="zh"
     data-loading="lazy"
     crossorigin="anonymous"
     async

@@ -21,6 +21,7 @@
 <link rel="alternate" type="application/rss+xml" href="https://rosa-thomas.me/en/tags/index.xml" title="rss">
 <link rel="alternate" hreflang="zh" href="https://rosa-thomas.me/zh/tags/">
 <link rel="alternate" hreflang="en" href="https://rosa-thomas.me/en/tags/">
+<link rel="alternate" hreflang="zh-tw" href="https://rosa-thomas.me/zh-tw/tags/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,7 +73,29 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://rosa-thomas.me/en/tags/">
+</script>
+<script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+></script>
+
+<script>
+    MathJax = {
+        tex: {
+            displayMath: [
+                ["\\[", "\\]"],
+                ["$$", "$$"],
+            ], 
+            inlineMath: [["\\(", "\\)"]], 
+        },
+        loader: {
+            load: ["ui/safe"],
+        },
+    };
+</script>
+
+<meta property="og:url" content="https://rosa-thomas.me/en/tags/">
   <meta property="og:site_name" content="Rosa Thomas&#39;s blog">
   <meta property="og:title" content="Tags">
   <meta property="og:description" content="A personal blog about mathematics, free software, and Go">
@@ -115,8 +138,12 @@
                 </button>
                     <ul class="lang-switch"><li>|</li>
                         <li>
-                            <a href="https://rosa-thomas.me/zh/" title="简体中文"
-                                aria-label="简体中文">Zh</a>
+                            <a href="https://rosa-thomas.me/zh/" title="中文（中国大陆）"
+                                aria-label="中文（中国大陆）">Zh</a>
+                        </li>
+                        <li>
+                            <a href="https://rosa-thomas.me/zh-tw/" title="中文（臺灣）"
+                                aria-label="中文（臺灣）">Zh-Tw</a>
                         </li>
                     </ul>
             </div>
@@ -152,25 +179,7 @@
 
 <ul class="terms-tags">
     <li>
-        <a href="https://rosa-thomas.me/en/tags/arch-linux/">Arch Linux <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://rosa-thomas.me/en/tags/essay/">Essay <sup><strong><sup>6</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://rosa-thomas.me/en/tags/free-software/">Free software <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://rosa-thomas.me/en/tags/go/">Go <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://rosa-thomas.me/en/tags/hung-hsi-wu/">Hung-hsi Wu <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://rosa-thomas.me/en/tags/linux/">Linux <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://rosa-thomas.me/en/tags/mathematics/">Mathematics <sup><strong><sup>3</sup></strong></sup> </a>
+        <a href="https://rosa-thomas.me/en/tags/essay/">Essay <sup><strong><sup>1</sup></strong></sup> </a>
     </li>
 </ul>
     </main>
